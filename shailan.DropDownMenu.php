@@ -26,15 +26,14 @@ class shailan_DropdownWidget extends WP_Widget {
 		$this->pluginname = "Dropdown Menu";
 		$this->shortname = "shailan_dm";
 		
-		$this->help_url = "http://shailan.com/wordpress/plugins/dropdown-menu/help/";
+		$this->help_url = "http://metinsaylan.com/wordpress/plugins/dropdown-menu/help/";
 		
 		$this->version = VERSION; 
 		$this->settings_key = "shailan_dropdown_menu";
 		$this->options_page = "dropdown-menu";
 		
 		// Hook up styles
-		add_action( 'wp_head', array(&$this, 'header') );
-		// add_action( 'wp_footer', array(&$this, 'footer'), 10, 1 );			
+		add_action( 'wp_head', array(&$this, 'header') );		
 		
 		// Hook up scripts 
 			wp_enqueue_script( 'jquery' ); 
