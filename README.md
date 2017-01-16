@@ -1,6 +1,6 @@
 === Dropdown Menu Widget ===
 Contributors: mattsay
-Donate link: http://shailan.com/donate  
+Donate link: http://metinsaylan.com/donate  
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8  
 Tested up to: 4.0
