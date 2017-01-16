@@ -3,8 +3,8 @@ Contributors: mattsay
 Donate link: http://shailan.com/donate  
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8  
-Tested up to: 4.0
-Stable tag: 1.9.4
+Tested up to: 4.7
+Stable tag: 1.9.5
 
 Pages/Categories/Custom dropdown navigation menus with nice jQuery effects. Comes with various customizable CSS themes!
 
@@ -45,7 +45,7 @@ Plugin comes with various themes already installed. If you want something differ
 
 = I found a bug! Where do i submit it? =
 
-You can submit errors and bugs using the [online form](http://shailan.com/contact) on my site OR you can submit via [wordpress support tags here](http://wordpress.org/tags/dropdown-menu-widget).
+Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://github.com/shailancom/dropdown-menu-widget/issues) page.
 
 == Screenshots ==
 
