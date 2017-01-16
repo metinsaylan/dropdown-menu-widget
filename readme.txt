@@ -1,6 +1,6 @@
 === Dropdown Menu Widget ===
 Contributors: mattsay
-Donate link: http://shailan.com/donate  
+Donate link: http://metinsaylan.com/donate  
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8  
 Tested up to: 4.7
@@ -11,7 +11,7 @@ Pages/Categories/Custom dropdown navigation menus with nice jQuery effects. Come
 == Description ==
 
 Dropdown Menu widget adds a beautiful, CSS only dropdown menu, listing pages, categories of your blog. You can also turn your wordpress navigation menu into a beatiful dropdown menu using this plugin. 
-It allows you to chose vertical or horizontal layout. It supports multiple instances. You can select a theme for your widget from the Dropdown Menu Settings page or you can CREATE  YOUR OWN THEME WITHIN SAME PLUGIN!! You can also customize your dropdown menu using CSS. If you want a custom dropdown theme you can [request](http://shailan.com/contact) one. Please visit [plugin site](http://shailan.com/wordpress/plugins/dropdown-menu) for more information. 
+It allows you to chose vertical or horizontal layout. It supports multiple instances. You can select a theme for your widget from the Dropdown Menu Settings page or you can CREATE  YOUR OWN THEME WITHIN SAME PLUGIN!! You can also customize your dropdown menu using CSS. If you want a custom dropdown theme you can [request](http://metinsaylan.com/contact) one. Please visit [plugin site](http://metinsaylan.com/wordpress/plugins/dropdown-menu) for more information. 
 
 == Installation ==
 
@@ -21,19 +21,19 @@ It allows you to chose vertical or horizontal layout. It supports multiple insta
 1. You can also use `<?php shailan_dropdown_menu(); ?>` in your template to display the menu.
 1. Don't forget to change menu settings from Settings -> Dropdown Menu panel.
 
-More detailed information can be found [here](http://shailan.com/wordpress/plugins/dropdown-menu/#installation).
+More detailed information can be found [here](http://metinsaylan.com/wordpress/plugins/dropdown-menu/#installation).
 
-More information about php template tag can be found [here](http://shailan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
+More information about php template tag can be found [here](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
 
 == Frequently Asked Questions ==
 
 = I don't have sidebar on my header, how can i add one? =
 
-Adding a sidebar in wordpress is a quite easy task. You can [read instructions here](http://shailan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/). If you don't want to add a sidebar consider using PHP template tag instead.
+Adding a sidebar in wordpress is a quite easy task. You can [read instructions here](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/). If you don't want to add a sidebar consider using PHP template tag instead.
 
 = I added this widget to my sidebar but it looks all weird! =
 
-This widget is intented for *wide header widget areas*, not regular sidebars. You can add a sidebar to your theme or you can get a *all-widget* theme from  [shailan.com](http://shailan.com). If you don't want to add a sidebar, you can use php template tag instead. Read [php template tag](http://shailan.com/2773/dropdown-menu-widget-template-tag-usage-explained/) instructions [here](http://shailan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
+This widget is intented for *wide header widget areas*, not regular sidebars. You can [add a sidebar](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/) to your theme or you can [get a theme](http://metinsaylan.com/wordpress/plugins/dropdown-menu/themes) that supports dropdown menu widget. If you don't want to add a sidebar, you can use php template tag instead. Read [php template tag](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/) instructions [here](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
 
 = Can i create my own theme? =
 
@@ -41,7 +41,7 @@ Since this plugin works on CSS, if you are capable of writing CSS, you can custo
 
 = I don't know CSS, how can i customize it? = 
 
-Plugin comes with various themes already installed. If you want something different, then you can [request a new theme](http://shailan.com/contact). 
+Plugin comes with various themes already installed. If you don't like existing themes put `dropdown.css` in your theme root and it will be selectable on themes list ;)
 
 = I found a bug! Where do i submit it? =
 
@@ -279,6 +279,3 @@ Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://
 = 0.2 = 
 * First public release.
 * Added login and register button options.
-
-== Upgrade Notice ==
-If you have
