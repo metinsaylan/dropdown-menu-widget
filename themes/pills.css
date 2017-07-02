@@ -1,10 +1,8 @@
 @charset "UTF-8";
-@import url('http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1');
 
 /** Container */
 .shailan-dropdown-menu .dropdown-horizontal-container{ 
 	background: transparent;	
-	font-family:'Droid Sans', Arial, sans-serif;
 	font-weight:bold;
 	margin: 10px 0 15px;
 }
@@ -37,7 +35,6 @@ ul.dropdown-align-right li{ }
 ul.dropdown li a {
 	padding: 5px 15px;
 	line-height: 22px;
-	font-size:1.2em; 
 }
 
 /** Link colors */
@@ -49,7 +46,7 @@ ul.dropdown ul { background:rgba(0,0,0,0.4); border-radius: 8px; padding: 7px 0;
 ul.dropdown-align-left ul, ul.dropdown-align-center ul { border-top-left-radius: 0; }
 ul.dropdown-align-right ul { border-top-right-radius: 0; }
 ul.dropdown ul li { background: transparent; }
-ul.dropdown ul li a{ font-size:1.1em; padding:2px 15px; }
+ul.dropdown ul li a{ padding:2px 15px; }
 
 /** Current menu item */
 li.current-cat>a, li.current_page_item>a, li.current-menu-item>a,

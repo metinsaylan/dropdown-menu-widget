@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /** Container */
-.shailan-dropdown-menu .dropdown-horizontal-container{ background:transparent url(images/trans-white.png); margin:7px; padding:5px; font-size:1.1em; border:1px solid rgba(255, 255, 255, 0.3);
+.shailan-dropdown-menu .dropdown-horizontal-container{ background:transparent url(images/trans-white.png); margin:7px; padding:5px; border:1px solid rgba(255, 255, 255, 0.3);
 	border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px; 
 	filter: alpha(opacity=60); -moz-opacity: .8; KhtmlOpacity: .8; opacity: .8;}
 	
-.shailan-dropdown-menu .dropdown-vertical-container{ background:transparent url(images/trans-white.png); margin:7px; padding:5px; font-size:1.1em; border:1px solid rgba(255, 255, 255, 0.3);
+.shailan-dropdown-menu .dropdown-vertical-container{ background:transparent url(images/trans-white.png); margin:7px; padding:5px; border:1px solid rgba(255, 255, 255, 0.3);
 	border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px; 
 	filter: alpha(opacity=60); -moz-opacity: .8; KhtmlOpacity: .8; opacity: .8;}
 

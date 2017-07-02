@@ -2,7 +2,7 @@
 
 /** Container */
 .shailan-dropdown-menu .dropdown-horizontal-container, .shailan-dropdown-menu ul.dropdown-vertical>li { background: url(images/blue-gradient/menu_bg.png) -6px 0px no-repeat; height:40px;  
-	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:14px; }
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; }
 /* .dropdown-horizontal-container{ background:url(images/blue-gradient/menu_bg.png) top right no-repeat; height:40px; margin-left:15px; margin-right:-15px; } */
 
 ul.dropdown{ padding:0px 0px 0px 20px;}
