@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1');
 
 /** Container */
 .shailan-dropdown-menu .dropdown-horizontal-container{ 
@@ -24,14 +23,11 @@
     border: 1px solid #ccc;
     padding: 4px;
     position: relative;
-	
-	font-family:'Droid Sans', Arial, sans-serif;
-	font-size: 12px;
 }
 
 ul.dropdown li { color: #555; text-align:center; }
 ul.dropdown ul li { text-align: left; }
-ul.dropdown-vertical>li{ border-top:1px solid #4283b9; }
+ul.dropdown-vertical>li{ border-bottom:1px solid #ddd; }
 ul.dropdown-horizontal.dropdown-align-left>li { border-right:1px solid #ccc; }
 ul.dropdown-horizontal.dropdown-align-left>li:last-child { border-right:0; }
 ul.dropdown-horizontal.dropdown-align-right>li { border-left:1px solid #ccc; }
