@@ -1,7 +1,7 @@
 <?php 
 
 function help_icon($hash){
-	return " <a href=\"http://shailan.com/wordpress/plugins/dropdown-menu/help//#".$hash."\" class=\"help-icon\">(?)</a>";
+	return " <a href=\"http://metinsaylan.com/wordpress/plugins/dropdown-menu/help//#".$hash."\" class=\"help-icon\">(?)</a>";
 }
 
 // Define themes
