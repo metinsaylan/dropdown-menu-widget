@@ -2,7 +2,7 @@
 /*
 Plugin Name: Dropdown Menu Widget
 Plugin URI: http://metinsaylan.com/wordpress/plugins/dropdown-menu
-Description: A multi widget to generate drop-down menus from your pages, categories & navigation menus. You can find more widgets, plugins and themes at <a href="http://shailan.com">shailan.com</a>.
+Description: A multi widget to generate drop-down menus from your pages, categories & navigation menus. You can find more widgets, plugins and themes at <a href="http://metinsaylan.com">metinsaylan.com</a>.
 Tags: dropdown, menu, css, css-dropdown, navigation, widget, dropdown-menu, customization, theme, jquery, template, multi-color, theme
 Version: 1.9.5
 Author: Metin Saylan
@@ -73,7 +73,6 @@ function admin_header(){
 	
 		// Options page styles
 		wp_enqueue_style( 'farbtastic' ); 
-		wp_enqueue_style( "google-droid-sans", "http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1", false, "1.0", "all");
 		wp_enqueue_style( "dropdown-admin", plugins_url( '/css/dropdown-admin.css' , __FILE__ ) , false, "1.0", "all");	
 		
 		// Options page scripts
@@ -87,11 +86,13 @@ function admin_header(){
 			$settings = $this->get_settings();
 			
 			// Set updated values
-			foreach($this->options as $option){					
-				if( $option['type'] == 'checkbox' && empty( $_REQUEST[ $option['id'] ] ) ) {
-					$settings[ $option['id'] ] = 'off';
-				} else {
-					$settings[ $option['id'] ] = $_REQUEST[ $option['id'] ]; 
+			foreach($this->options as $option){				
+				if( array_key_exists( 'id', $option ) ){
+					if( $option['type'] == 'checkbox' && empty( $_REQUEST[ $option['id'] ] ) ) {
+						$settings[ $option['id'] ] = 'off';
+					} else {
+						$settings[ $option['id'] ] = $_REQUEST[ $option['id'] ]; 
+					}
 				}
 			}
 			
@@ -198,28 +199,13 @@ function options_page(){
 	$current = $this->get_plugin_settings();
 	
 	$messages = array( 
-		"1" => __("Dropdown Menu Widget settings saved.", "shailan-dropdown-menu"),
-		"2" => __("Dropdown Menu Widget settings reset.", "shailan-dropdown-menu")
+		"1" => __("Dropdown Menu Widget settings are saved.", "shailan-dropdown-menu"),
+		"2" => __("Dropdown Menu Widget settings are reset.", "shailan-dropdown-menu")
 	);
 	
-	$navigation = '<div id="stf_nav"><a href="http://shailan.com/wordpress/plugins/dropdown-menu/">Plugin page</a> | <a href="http://shailan.com/wordpress/plugins/dropdown-menu/help/">Usage</a> | <a href="http://shailan.com/donate/">Donate</a> | <a href="http://shailan.com/wordpress/plugins/">Get more widgets..</a></div>
+	$navigation = '<div id="stf_nav"><a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/">Plugin page</a> | <a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/help/">Usage</a> | <a href="http://metinsaylan.com/donate/">Donate</a> | <a href="http://metinsaylan.com/wordpress/plugins/">Get more plugins..</a></div>';
 	
-<div class="stf_share">
-	<div class="share-label">
-		Like this plugin? 
-	</div>
-	<div class="share-button tweet">
-		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://shailan.com/wordpress/plugins/dropdown-menu/" data-text="I am using #dropdownmenu #widget by shailan on my #wordpress blog, Check this out!" data-count="horizontal" data-via="shailancom">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	</div>
-	<div class="share-button facebook">
-		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-		<fb:like href="http://shailan.com/wordpress/plugins/dropdown-menu/" ref="plugin_options" show_faces="false" width="300" font="segoe ui"></fb:like>
-	</div>
-</div>
-	
-	';
-	
-	$footer_text = '<em><a href="http://shailan.com/wordpress/plugins/dropdown-menu/">Dropdown Menu Widget</a> by <a href="http://shailan.com/">SHAILAN</a></em>';
+	$footer_text = '<em><a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/">Dropdown Menu Widget</a> by <a href="http://metinsaylan.com/">SHAILAN</a></em>';
 	
 	include_once( "stf-page-options.php" );
 
@@ -260,7 +246,7 @@ function options_page(){
 		
 		$nl = "\n"; $indent = "\n\t"; $indent2 = "\n\t\t";
 		
-		echo $nl . "<!-- Dropdown Menu Widget by Shailan.com (http://shailan.com)  v". VERSION ." on wp".get_bloginfo( 'version' )." -->";
+		echo $nl . "<!-- Dropdown Menu Widget by metinsaylan.com (http://metinsaylan.com)  v". VERSION ." on wp".get_bloginfo( 'version' )." -->";
 		echo $nl . "<!-- Menu Type : " . $type . " -->";
 		echo $nl . "<div class=\"shailan-dropdown-menu\" >";
 			
@@ -468,7 +454,7 @@ function options_page(){
 					'From URL' => '*url*',
 					'Custom CSS' => '*custom*',
 					'Color Scheme' => 'color-scheme',
-					'Web 2.0 by Shailan' => plugins_url('/themes/web20.css', __FILE__),
+					'Web 2.0 by MetinSaylan' => plugins_url('/themes/web20.css', __FILE__),
 					'Simple White' => plugins_url('/themes/simple.css', __FILE__),
 					'Wordpress Default' => plugins_url('/themes/wpdefault.css', __FILE__),
 					'Grayscale' => plugins_url('/themes/grayscale.css', __FILE__),
@@ -480,9 +466,9 @@ function options_page(){
 					'Adobe theme' => plugins_url('/themes/adobe.com/default.advanced.css', __FILE__),
 					'MTV theme' => plugins_url('/themes/mtv.com/default.ultimate.css', __FILE__),
 					'Hulu theme' => plugins_url('/themes/hulu/hulu.css', __FILE__),
-					'Rounded Corners by Shailan' => plugins_url('/themes/rounded-corners.css', __FILE__),
-					'Rounded Corners Light by Shailan' => plugins_url('/themes/rounded-corners-light.css', __FILE__),
-					'Pills by Shailan' => plugins_url('/themes/pills.css', __FILE__)
+					'Rounded Corners by MetinSaylan' => plugins_url('/themes/rounded-corners.css', __FILE__),
+					'Rounded Corners Light by MetinSaylan' => plugins_url('/themes/rounded-corners-light.css', __FILE__),
+					'Pills by MetinSaylan' => plugins_url('/themes/pills.css', __FILE__)
 				);
 				
 				$theme_names = array_flip($available_themes);				
@@ -493,7 +479,7 @@ function options_page(){
 		</p>
 			
 		<div class="widget-control-actions">
-			<p><small>Powered by <a href="http://shailan.com/wordpress/plugins/dropdown-menu/" title="Wordpress Tips and tricks, Freelancing, Web Design">Shailan.com</a> | <a href="http://shailan.com/wordpress/" title="Get more wordpress widgets and themes" target="_blank" >Get more..</a></small></p>
+			<p><small>Powered by <a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/" title="Wordpress Tips and tricks, Freelancing, Web Design">MetinSaylan.com</a> | <a href="http://metinsaylan.com/wordpress/" title="Get more wordpress widgets and themes" target="_blank" >Get more..</a></small></p>
 		</div>
 		<br class="clear" />
 			
@@ -523,7 +509,7 @@ function options_page(){
 			$shailan_dm_color_hoverlink = $this->get_plugin_setting('shailan_dm_color_hoverlink');
 			$is_fx_active = (bool) ( 'on' == $this->get_plugin_setting('shailan_dm_effects') );
 			
-			echo "\n\n<!-- Dropdown Menu Widget Styles by shailan (http://shailan.com) v" . VERSION . " on wp" . get_bloginfo( 'version' ) . " -->"; // For debug
+			echo "\n\n<!-- Dropdown Menu Widget Styles by shailan (http://metinsaylan.com) v" . VERSION . " on wp" . get_bloginfo( 'version' ) . " -->"; // For debug
 			echo "\n<link rel=\"stylesheet\" href=\"". plugins_url( '/css/shailan-dropdown.min.css' , __FILE__ ) . "\" type=\"text/css\" />";
 			
 			if( $theme!='*none*' && $theme != '*custom*' ){
@@ -673,7 +659,7 @@ ul.dropdown li li.parent:hover>a:after{
 		
 		if( $is_fx_active || $remove_title_attributes || $remove_top_level_links ){
 		
-		echo "\n\n<!-- Dropdown Menu Widget Effects by shailan (http://shailan.com) v". VERSION ." on wp".get_bloginfo( 'version' )." -->"; // For debug
+		echo "\n\n<!-- Dropdown Menu Widget Effects by shailan (http://metinsaylan.com) v". VERSION ." on wp".get_bloginfo( 'version' )." -->"; // For debug
 		echo "\n<script type=\"text/javascript\">/* <![CDATA[ */";
 		echo "\njQuery(document).ready(function($) { \n";
 		
@@ -744,7 +730,7 @@ ul.dropdown li li.parent:hover>a:after{
 function get_dropdown_setting( $key, $default = '' ) {
 	$settings = get_option('shailan_dropdown_menu');
 	
-	if( array_key_exists($key, $settings) ){
+	if( array_key_exists( $key, $settings ) ){
 		return $settings[ $key ];
 	} else {
 		return $default;
@@ -838,6 +824,7 @@ function shailan_nav_menu_args_filter( $args ){
 	
 	if( 'on' == $replace_enabled ){
 		$theme_location = get_dropdown_setting( 'shailan_dm_location' );
+		
 		if( $args['theme_location'] == $theme_location ){
 			$args['fallback_cb'] = 'shailan_dropdown_menu';
 		}
