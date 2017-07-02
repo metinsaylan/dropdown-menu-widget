@@ -31,7 +31,7 @@ class shailan_CategoryWalker extends Walker {
 	 * @param int $depth Depth of category. Used for tab indentation.
 	 * @param array $args Will only append content if style argument value is 'list'.
 	 */
-	function start_lvl(&$output, $depth, $args) {
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
 		if ( 'list' != $args['style'] )
 			return;
 
@@ -47,7 +47,7 @@ class shailan_CategoryWalker extends Walker {
 	 * @param int $depth Depth of category. Used for tab indentation.
 	 * @param array $args Will only append content if style argument value is 'list'.
 	 */
-	function end_lvl(&$output, $depth, $args) {
+	function end_lvl( &$output, $depth = 0, $args = array() ) {
 		if ( 'list' != $args['style'] )
 			return;
 
@@ -64,7 +64,7 @@ class shailan_CategoryWalker extends Walker {
 	 * @param int $depth Depth of category in reference to parents.
 	 * @param array $args
 	 */
-	function start_el(&$output, $category, $depth, $args) {
+	function start_el( &$output, $object, $depth = 0, $args = Array(), $current_object_id = 0 ) {
 		extract($args);
 
 		$cat_name = esc_attr( $category->name);
@@ -144,7 +144,7 @@ class shailan_CategoryWalker extends Walker {
 	 * @param int $depth Depth of category. Not used.
 	 * @param array $args Only uses 'list' for whether should append to output.
 	 */
-	function end_el(&$output, $page, $depth, $args) {
+	function end_el( &$output, $object, $depth = 0, $args = Array() ) {
 		if ( 'list' != $args['style'] )
 			return;
 

@@ -14,13 +14,18 @@ define('VERSION', '1.9.5');
 
 class shailan_DropdownWidget extends WP_Widget {
 
-	function shailan_DropdownWidget(){
+	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'shailan-dropdown-menu-widget', 
 			'description' => __( 'Dropdown page/category/custom menu', 'shailan-dropdown-menu' ) 
 		);
 		
-		$this->WP_Widget('dropdown-menu', __('Dropdown Menu', 'shailan-dropdown-menu'), $widget_ops);
+		parent::__construct(
+			'dropdown-menu', 
+			__('Dropdown Menu', 'shailan-dropdown-menu'), 
+			$widget_ops
+		);
+		
 		$this->alt_option_name = 'widget_dropdown_menu';
 		
 		$this->pluginname = "Dropdown Menu";
@@ -408,6 +413,7 @@ function options_page(){
 *  WIDGET FORM
 ******************************************************************************/
     function form($instance) {	
+	
 		$widget_options = wp_parse_args( $instance, $this->widget_defaults );
 		extract( $widget_options, EXTR_SKIP );
 		
