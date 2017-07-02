@@ -13,30 +13,19 @@
 
 	
 <div id="shailancom">
-
-	<div id="donate">
-	This plugin is FREE, </br> If you like it, please support it. <br />
-		<div class="center">
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="2UF8Y5ZSHAGZL" />
-			<input type="image" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-			<img alt="" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/scr/pixel.gif" width="1" height="1" />
-			</form>
-		</div>
-	</div>
-
-	<div id="stf_tweet_wrap">	
-	<a href="http://twitter.com/shailancom" class="follow-link">Follow Shailan.com on twitter!</a>
-	</div>
-
 	<div id="headlines">
-	<h3>Shailan Design Blog</h3>
+	
+	<h3>User Survey</h3>
+	<p>
+	Please <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0kpN2Ak2pmRwkWlDf8_pMoHPokjGPrFYi1yd6v0TmnahGug/viewform?usp=sf_link" rel="_blank">take our little survey</a> to help us improve this plugin. <p>
+	
+	<h3>Metin Saylan's Blog</h3>
+	<em>Latest Headlines</em>
 		<?php
 				//echo get_latest_tweet('mattsay');			
 				
 				$rss_options = array(
-					'link' => 'http://shailan.com',
+					'link' => 'http://metinsaylan.com',
 					'url' => 'http://feeds.feedburner.com/shailan',
 					'title' => 'Shailan.com',
 					'items' => 5,
@@ -59,7 +48,7 @@
 
 
 <div id="demo"><h3>Menu Demo:</h3><?php shailan_dropdown_menu(); ?><br />
-<em>Please note, demo uses <a href="http://shailan.com/2773/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
+<em>Please note, demo uses <a href="http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
 
 
 <form method="post">
