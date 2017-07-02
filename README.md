@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 4.0
 Stable tag: 1.9.4
 
-Pages/Categories/Custom dropdown navigation menus with nice jQuery effects. Comes with various customizable CSS themes!
+Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery effects. Comes with various customizable CSS themes!
 
 == Description ==
 
