@@ -31,7 +31,7 @@ class shailan_DropdownWidget extends WP_Widget {
 		$this->pluginname = "Dropdown Menu";
 		$this->shortname = "shailan_dm";
 
-		$this->help_url = "http://metinsaylan.com/wordpress/plugins/dropdown-menu/help/";
+		$this->help_url = "http://metinsaylan.com/docs/dropdown-menu-widget-help/";
 
 		$this->version = VERSION;
 		$this->settings_key = "shailan_dropdown_menu";
