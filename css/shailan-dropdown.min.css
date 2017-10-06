@@ -79,17 +79,19 @@ ul.dropdown ul ul ul ul ul ul {
     display: none!important
 }
 
-.dm-align-right table {
-    float: right
-}
-
-.dm-align-left table {
-    float: left
-}
-
 .menu-alignment-wrap {
     display: table;
 }
+
+.dm-align-right table, .dm-align-right .menu-alignment-wrap {
+    float: right
+}
+
+.dm-align-left table, .dm-align-left .menu-alignment-wrap {
+    float: left
+}
+
+
 
 ul.dropdown-horizontal.dropdown-align-right ul {
     right: 0;
