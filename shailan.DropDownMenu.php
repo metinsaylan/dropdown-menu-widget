@@ -424,7 +424,7 @@ function options_page(){
 		<small>Page IDs, separated by commas.</small></p>
 
 		<p><label for="<?php echo $this->get_field_id('width'); ?>"><?php _e('Menu Width:', 'shailan-dropdown-menu'); ?> <?php $this->help_link('widget-width'); ?><input class="widefat" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo $width; ?>" /></label><br />
-		<small>Menu width, leave blank for default.</small></p>
+		<small>Menu width in pixels (Eg. 200). Leave blank for default.</small></p>
 
 		<p>
 		<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('home'); ?>" name="<?php echo $this->get_field_name('home'); ?>"<?php checked( $home ); ?> />
@@ -437,7 +437,11 @@ function options_page(){
 		<label for="<?php echo $this->get_field_id('vertical'); ?>"><?php _e( 'Vertical menu' , 'shailan-dropdown-menu' ); ?><?php $this->help_link('vertical-menu'); ?></label>
 		</p>
 
-		<p><?php _e('Align:', 'shailan-dropdown-menu'); ?> <?php $this->help_link('alignment'); ?><label for="left"><input type="radio" id="left" name="<?php echo $this->get_field_name('align'); ?>" value="left" <?php if($align=='left'){ echo 'checked="checked"'; } ?> /> <?php _e('Left', 'shailan-dropdown-menu'); ?></label> <label for="center"><input type="radio" id="center" name="<?php echo $this->get_field_name('align'); ?>" value="center" <?php if($align=='center'){ echo 'checked="checked"'; } ?>/> <?php _e('Center', 'shailan-dropdown-menu'); ?></label> <label for="right"><input type="radio" id="right" name="<?php echo $this->get_field_name('align'); ?>" value="right" <?php if($align=='right'){ echo 'checked="checked"'; } ?>/> <?php _e('Right', 'shailan-dropdown-menu'); ?></label></p>
+		<p><?php _e('Align:', 'shailan-dropdown-menu'); ?> <?php $this->help_link('alignment'); ?>
+		<label for="left"><input type="radio" id="left" name="<?php echo $this->get_field_name('align'); ?>" value="left" <?php if($align=='left'){ echo 'checked="checked"'; } ?> /><?php _e('Left', 'shailan-dropdown-menu'); ?></label>
+		<label for="center"><input type="radio" id="center" name="<?php echo $this->get_field_name('align'); ?>" value="center" <?php if($align=='center'){ echo 'checked="checked"'; } ?>/> <?php _e('Center', 'shailan-dropdown-menu'); ?></label>
+		<label for="right"><input type="radio" id="right" name="<?php echo $this->get_field_name('align'); ?>" value="right" <?php if($align=='right'){ echo 'checked="checked"'; } ?>/> <?php _e('Right', 'shailan-dropdown-menu'); ?></label>
+	  </p>
 
 		<p><?php _e('Current Theme:', 'shailan-dropdown-menu') ?><br />
 			<?php $theme = $this->get_plugin_setting('shailan_dm_active_theme');
