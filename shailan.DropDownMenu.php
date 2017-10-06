@@ -251,8 +251,7 @@ function options_page(){
 		echo $nl . "<div class=\"shailan-dropdown-menu\" >";
 
 			$dropdown_wrapper_open = $nl . '<div id="shailan-dropdown-wrapper-' . $this->number . '" >';
-
-			$dropdown_open = $indent . '<div align="'.$align.'" class="'.$orientation.'-container dm-align-'.$align.' clearfix"><table cellpadding="0" cellspacing="0"><tr><td>';
+			$dropdown_open = $indent . '<div align="'.$align.'" class="'.$orientation.'-container dm-align-'.$align.' clearfix"><div class="menu-alignment-wrap">';
 			$list_open = $indent2 . '<ul id="dropdown-'. $this->number .'" class="dropdown dropdown-'. $this->number .' '. $orientation . ' dropdown-align-'.$align.'"  '. $width_attr .' >' . $nl . "<!-- Menu elements start -->\n";
 
 			if($home && ($type == 'pages' || $type == 'categories')){
@@ -271,10 +270,8 @@ function options_page(){
 
 			$list_close = ($admin ? wp_register('<li class="admintab">','</li>', false) : '') . ($login ? '<li class="page_item">'. wp_loginout('', false) . '</li>' : '')  . '
 					</ul>';
-			$dropdown_close = '</td>
-				  </tr></table>
-				</div>';
 
+			$dropdown_close = '</div></div>';
 			$dropdown_wrapper_close = '</div> ';
 
 			$menu_defaults = array(
