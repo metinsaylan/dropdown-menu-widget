@@ -6,7 +6,7 @@
 
 **Dropdown Menu widget** adds a beautiful dropdown menu, listing pages and categories of your blog. You can also turn your WordPress navigation menus into beautiful dropdown menus using this plugin.
 
-Features:  
+Main Features:  
 
 * Automatically generated menus
 * Supports pages, categories and custom menus
