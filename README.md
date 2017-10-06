@@ -23,7 +23,7 @@ Features:
 * [Using Custom Menus In Dropdown Menu Widget](http://metinsaylan.com/wordpress/2010/07/26/custom-dropdown-menu-using-wordpress-3-nav-menus/)
 * [Tutorial: Create your very own dropdown menu stylesheet](http://metinsaylan.com/wordpress/2010/04/04/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
 * [Hook: Append Categories Menu To Pages Menu](http://metinsaylan.com/wordpress/2011/02/10/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
-* [All posts tagged Dropdown Menu Widget](http://metinsaylan.com/tag/dropdown-menu-widget/)
+* [View all posts tagged `Dropdown Menu Widget`](http://metinsaylan.com/tag/dropdown-menu-widget/)
 
 If you like this plugin, please [donate](http://metinsaylan.com/donate/).
 
