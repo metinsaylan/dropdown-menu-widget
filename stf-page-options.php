@@ -16,36 +16,56 @@
 <div class="stf_opts_wrap">
 <div class="stf_options">
 
-
 <div id="demo"><h3>Menu Demo:</h3><?php shailan_dropdown_menu(); ?><br />
 <em>Please note, demo uses <a href="http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
-
 
 <form method="post">
 <div id="options-tabs">
 
-	<!-- Tabs navigation -->
-	<ul id="tabs-navigation" class="tabs">
-	<?php
-		foreach ($options as $field) {
-			if ( $field['type'] == "section" ) {
-				echo "<li><a href=\"#" . sanitize_title( $field['name'] ) . "\" class=\"" . sanitize_title( $field['name'] ) . "\">".$field['label']."</a></li>";
-			}
-		}
-	?>
-	</ul>
-	<!-- [End] Tabs Navigation -->
-
 <div class="tab_container">
+
+	<div id="tabs-footer" class="clearfix">
+		<p class="submit">
+			<?php submit_button( 'Save Changes', 'primary', 'save', false ); ?>
+			<input type="hidden" name="action" value="save" />
+		</p>
+		</form>
+
+		<form method="post">
+			<?php submit_button( 'Reset Options', 'secondary', 'reset', false ); ?>
+			<input type="hidden" name="action" value="reset" />
+		</form>
+	</div>
+
 <?php foreach ($options as $field) {
 switch ( $field['type'] ) {
 
+	case 'section': ?>
+
+<h3 id="<?php echo sanitize_title( $field['name'] ); ?>" class="section-title"><?php echo $field['label']; ?></h3>
+
+<?php
+
 	case 'open': ?>
+
+<div class="settings-section">
 
 <?php break;
 
 	case 'close': ?>
 
+</div>
+<div id="tabs-footer" class="clearfix">
+	<p class="submit">
+		<?php submit_button( 'Save Changes', 'primary', 'save', false ); ?>
+		<input type="hidden" name="action" value="save" />
+	</p>
+	</form>
+
+	<form method="post">
+		<?php submit_button( 'Reset Options', 'secondary', 'reset', false ); ?>
+		<input type="hidden" name="action" value="reset" />
+	</form>
 </div>
 
 <?php break;
