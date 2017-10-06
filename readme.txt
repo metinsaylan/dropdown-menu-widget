@@ -12,7 +12,7 @@ Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery effect
 
 **Dropdown Menu widget** adds a beautiful dropdown menu, listing pages and categories of your blog. You can also turn your WordPress navigation menus into beautiful dropdown menus using this plugin.
 
-Features:
+Main Features:
 
 * Automatically generated menus
 * Supports pages, categories and custom menus
@@ -29,7 +29,7 @@ Features:
 * [Using Custom Menus In Dropdown Menu Widget](http://metinsaylan.com/wordpress/2010/07/26/custom-dropdown-menu-using-wordpress-3-nav-menus/)
 * [Tutorial: Create your very own dropdown menu stylesheet](http://metinsaylan.com/wordpress/2010/04/04/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
 * [Hook: Append Categories Menu To Pages Menu](http://metinsaylan.com/wordpress/2011/02/10/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
-* [All posts tagged Dropdown Menu Widget](http://metinsaylan.com/tag/dropdown-menu-widget/)
+* [View all posts tagged `Dropdown Menu Widget`](http://metinsaylan.com/tag/dropdown-menu-widget/)
 
 If you like this plugin, please [donate](http://metinsaylan.com/donate/).
 
@@ -41,17 +41,13 @@ Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
 
 Dropdown menu widget is so easy to setup. Just follow the steps below to add it to your site.
 
-1. Login to your WordPress dashboard and go to Plugins &gt; Add New.
-2. If you have downloaded the plugin, click on "Upload" link and upload the plugin.
-3. If you haven't downloaded yet, type <code>dropdown menu widget</code> to search field and click "Search".
-4. Click on "Install" and click "Activate plugin" once it is loaded.
-5. Go to "Dropdown menu settings" under "Settings" to change dropdown theme and edit your settings.
-6. Add the dropdown menu to your site using "Widgets" or template tag codes.
+1. Login to your WordPress dashboard and go to Plugins > Add New.
+2. If you have downloaded the plugin, click on `Upload` link and upload the plugin.
+3. If you haven't downloaded yet, type `dropdown menu widget` to search field and click `Search`.
+4. Click on `Install` and click `Activate plugin` once it is loaded.
+5. Go to `Dropdown menu settings` under `Settings` to change dropdown theme and edit your settings.
+6. Add the dropdown menu to your site using `Widgets` or template tag codes.
 7. Done. Enjoy!
-
-More detailed information can be found [here](http://metinsaylan.com/wordpress/plugins/dropdown-menu/#installation).
-
-More information about php template tag can be found [here](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
 
 == Frequently Asked Questions ==
 
