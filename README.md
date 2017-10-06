@@ -6,7 +6,7 @@
 
 **Dropdown Menu widget** adds a beautiful dropdown menu, listing pages and categories of your blog. You can also turn your WordPress navigation menus into beautiful dropdown menus using this plugin.
 
-Main Features:  
+### Main Features:  
 
 * Automatically generated menus
 * Supports pages, categories and custom menus
@@ -16,7 +16,7 @@ Main Features:
 * Supports Multiple Instances
 * Can be embedded into theme using [PHP Template Tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
 
-*Documentation & Simple Tutorials to Get You Started:*
+### Documentation & Simple Tutorials
 
 * [Dropdown Menu Widget Help](http://metinsaylan.com/docs/dropdown-menu-widget-help/)
 * [Dropdown Menu PHP Template Tag Usage](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
