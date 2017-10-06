@@ -246,10 +246,7 @@ function options_page(){
 
 		$nl = "\n"; $indent = "\n\t"; $indent2 = "\n\t\t";
 
-		echo $nl . "<!-- Dropdown Menu Widget by metinsaylan.com (http://metinsaylan.com)  v". VERSION ." on wp".get_bloginfo( 'version' )." -->";
-		echo $nl . "<!-- Menu Type : " . $type . " -->";
 		echo $nl . "<div class=\"shailan-dropdown-menu\" >";
-
 			$dropdown_wrapper_open = $nl . '<div id="shailan-dropdown-wrapper-' . $this->number . '" >';
 			$dropdown_open = $indent . '<div align="'.$align.'" class="'.$orientation.'-container dm-align-'.$align.' clearfix"><div class="menu-alignment-wrap">';
 			$list_open = $indent2 . '<ul id="dropdown-'. $this->number .'" class="dropdown dropdown-'. $this->number .' '. $orientation . ' dropdown-align-'.$align.'"  '. $width_attr .' >' . $nl . "<!-- Menu elements start -->\n";
@@ -382,7 +379,6 @@ function options_page(){
 				} // switch ($type)
 
 			echo $nl . "</div>";
-			echo "\n\n<!--/ Dropdown Menu Widget -->";		?>
 
               <?php echo $after_widget; $this->footer(); ?>
         <?php
