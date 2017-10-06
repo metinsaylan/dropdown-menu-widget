@@ -173,50 +173,14 @@ case 'picker':
 }
 ?>
 
-<div id="tabs-footer" class="clearfix">
-	<p class="submit">
-		<?php submit_button( 'Save Changes', 'primary', 'save', false ); ?>
-		<input type="hidden" name="action" value="save" />
-	</p>
-	</form>
-
-	<form method="post">
-		<?php submit_button( 'Reset Options', 'secondary', 'reset', false ); ?>
-		<input type="hidden" name="action" value="reset" />
-	</form>
-
-	<div class="copyright"><?php if(!empty($footer_text)){echo $footer_text;} ?></div>
 </div>
 </div>
 </div>
-</div>
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-
-	//When page loads...
-	jQuery(".tab_content").hide(); //Hide all content
-	jQuery("ul.tabs li:first").addClass("active").show(); //Activate first tab
-	jQuery(".tab_content:first").show(); //Show first tab content
-
-	//On Click Event
-	jQuery("ul.tabs li").click(function() {
-
-		jQuery("ul.tabs li").removeClass("active"); //Remove any "active" class
-		jQuery(this).addClass("active"); //Add "active" class to selected tab
-		jQuery(".tab_content").hide(); //Hide all tab content
-
-		var activeTab = jQuery(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
-		jQuery(activeTab).fadeIn(); //Fade in the active ID content
-		return false;
-	});
-
-});
-</script>
 
 <?php if(WP_DEBUG){ ?>
 <h3>Debug information</h3>
 <p>You are seeing this because your WP_DEBUG variable is set to true.</p>
 <pre><?php print_r($current) ?></pre>
 <?php } ?>
+
 </div>
