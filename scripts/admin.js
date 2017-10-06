@@ -1,7 +1,7 @@
 /*var farbtastic; */
 
 function pickColor(obj, color) {
-	farbtastic.setColor(color);
+	jQuery.farbtastic.setColor(color);
 	jQuery("#" + obj).val(color);
 }
 
@@ -22,10 +22,10 @@ jQuery(document).ready(function() {
 			jQuery('#shailan_dm_theme_url').disable();
 		}
 	}
-	
+
 	jQuery('#shailan_dm_active_theme').change(function(){ shailan_dm_active_theme_change() });
 	shailan_dm_active_theme_change();
-	
+
 	function shailan_dm_effects_change(){
 		if( jQuery('#shailan_dm_effects').attr('checked') == true || jQuery('#shailan_dm_effects').attr('checked') == 'checked' ){
 			jQuery('#shailan_dm_effect').enable();
@@ -35,23 +35,28 @@ jQuery(document).ready(function() {
 			jQuery('#shailan_dm_effect_speed').disable();
 		}
 	}
-	
+
 	jQuery('#shailan_dm_effects').change(function(){ shailan_dm_effects_change() });
 	shailan_dm_effects_change();
-	
+
 	var f = jQuery.farbtastic('#picker');
 	var p = jQuery('#picker').fadeOut();
 	var selected;
 
 	// Color selector areas:
-	var pickers = ["shailan_dm_color_lihover", "shailan_dm_color_menubg", "shailan_dm_color_link", "shailan_dm_color_hoverlink"];
+	var pickers = [
+		"shailan_dm_color_lihover",
+		"shailan_dm_color_menubg",
+		"shailan_dm_color_link",
+		"shailan_dm_color_hoverlink"
+	];
 
-	jQuery.each(pickers, function() {		
-	
-		f.linkTo(this);
-		
+	jQuery.each(pickers, function() {
+
+		f.linkTo("#" + this);
+
 		jQuery("#" + this).css('background-color', jQuery("#" + this).val());
-	
+
 		jQuery("#" + this).focus(function(){
 			if (selected) {
 				jQuery(selected).removeClass('selected');
@@ -61,7 +66,7 @@ jQuery(document).ready(function() {
 			jQuery(selected = this).addClass('selected');
 			//jQuery('#picker').show();
 		});
-		
+
 		jQuery("#" + this).keyup(function() {
 			f.linkTo(this);
 			p.fadeIn(2);
@@ -78,7 +83,7 @@ jQuery(document).ready(function() {
 				jQuery(this).addClass('color-error');
 			}
 		});
-		
+
 	});
 
 	jQuery(document).mousedown(function(){
@@ -88,8 +93,8 @@ jQuery(document).ready(function() {
 				jQuery(this).fadeOut(10);
 		});
 	});
-	
-	
-	
-	
+
+
+
+
 });
