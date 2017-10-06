@@ -22,9 +22,9 @@ $default_themes = array(
 	'Adobe theme' => plugins_url('/themes/adobe.com/default.advanced.css', __FILE__),
 	'MTV theme' =>  plugins_url('/themes/mtv.com/default.ultimate.css', __FILE__),
 	'Hulu theme' =>  plugins_url('/themes/hulu/hulu.css', __FILE__),
-	'Rounded Corners by Shailan' => plugins_url('/themes/rounded-corners.css', __FILE__),
-	'Rounded Corners Light by Shailan' => plugins_url('/themes/rounded-corners-light.css', __FILE__),
-	'Pills by Shailan' => plugins_url('/themes/pills.css', __FILE__)
+	'Rounded Corners' => plugins_url('/themes/rounded-corners.css', __FILE__),
+	'Rounded Corners Light' => plugins_url('/themes/rounded-corners-light.css', __FILE__),
+	'Pills' => plugins_url('/themes/pills.css', __FILE__)
 );
 
 $available_themes = array();
