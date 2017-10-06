@@ -32,8 +32,12 @@ Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
 
 ## Installation
 
-1. Upload the plugin to your `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to Appearance - Widgets to add this widget to one of your sidebars
-1. You can also use `<?php shailan_dropdown_menu(); ?>` in your template to display the menu.
-1. Don't forget to change menu settings from Settings - Dropdown Menu panel.
+Dropdown menu widget is so easy to setup. Just follow the steps below to add it to your site.
+
+1. Login to your WordPress dashboard and go to Plugins > Add New.
+2. If you have downloaded the plugin, click on `Upload` link and upload the plugin.
+3. If you haven't downloaded yet, type `dropdown menu widget` to search field and click `Search`.
+4. Click on `Install` and click `Activate plugin` once it is loaded.
+5. Go to `Dropdown menu settings` under `Settings` to change dropdown theme and edit your settings.
+6. Add the dropdown menu to your site using `Widgets` or template tag codes.
+7. Done. Enjoy!
