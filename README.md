@@ -37,7 +37,3 @@ Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
 1. Go to Appearance - Widgets to add this widget to one of your sidebars
 1. You can also use `<?php shailan_dropdown_menu(); ?>` in your template to display the menu.
 1. Don't forget to change menu settings from Settings - Dropdown Menu panel.
-
-More detailed information can be found [here](http://shailan.com/wordpress/plugins/dropdown-menu/#installation).
-
-More information about php template tag can be found [here](http://shailan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
