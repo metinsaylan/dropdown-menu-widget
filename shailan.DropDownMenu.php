@@ -478,9 +478,6 @@ function options_page(){
 			<a href="options-general.php?page=dropdown-menu" style="text-decoration:none;"><?php esc_attr_e('Change theme &rarr;', 'shailan-dropdown-menu'); ?></a>
 		</p>
 
-		<div class="widget-control-actions">
-			<p><small>Powered by <a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/" title="Wordpress Tips and tricks, Freelancing, Web Design">MetinSaylan.com</a> | <a href="http://metinsaylan.com/wordpress/" title="Get more wordpress widgets and themes" target="_blank" >Get more..</a></small></p>
-		</div>
 		<br class="clear" />
 
         <?php
