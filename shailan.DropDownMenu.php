@@ -728,8 +728,8 @@ ul.dropdown li li.parent:hover>a:after{
 // *** END OF CLASS ***
 
 function get_dropdown_setting( $key, $default = '' ) {
-	$settings = get_option('shailan_dropdown_menu');
-
+	$settings = get_option( 'shailan_dropdown_menu' );
+	$key = 'shailan_dm_' . $key;
 	if( array_key_exists( $key, $settings ) ){
 		return $settings[ $key ];
 	} else {
@@ -761,16 +761,16 @@ add_filter( "plugin_action_links_$plugin", 'shailan_dropdown_add_settings_link' 
 
 // After activation redirect
 register_activation_hook(__FILE__, 'shailan_dropdown_activate');
-add_action('admin_init', 'shailan_dropdown_redirect');
+add_action( 'admin_init', 'shailan_dropdown_redirect' );
 
 function shailan_dropdown_activate() {
-    add_option('shailan_dropdown_do_activation_redirect', true);
+    add_option( 'shailan_dropdown_do_activation_redirect', true );
 }
 
 // Redirects to options page on activate
 function shailan_dropdown_redirect() {
     if ( get_option( 'shailan_dropdown_do_activation_redirect', false ) ) {
-        delete_option('shailan_dropdown_do_activation_redirect');
+        delete_option( 'shailan_dropdown_do_activation_redirect' );
 		$url = admin_url( 'options-general.php?page=dropdown-menu' );
         wp_redirect($url);
     }
@@ -779,15 +779,15 @@ function shailan_dropdown_redirect() {
 // Template tag support
 function shailan_dropdown_menu( $args = array() ){
 
-	$type = get_dropdown_setting('shailan_dm_type');
-	$exclude = get_dropdown_setting('shailan_dm_exclude');
-	$inline_style = get_dropdown_setting('shailan_dm_style');
-	$login = (bool) ( 'on' == get_dropdown_setting('shailan_dm_login') );
-	$admin = (bool) ( 'on' == get_dropdown_setting('shailan_dm_admin') );
-	$vertical = (bool) ( 'on' == get_dropdown_setting('shailan_dm_vertical') );
-	$home = (bool) ( 'on' == get_dropdown_setting('shailan_dm_home') );
-	$align = get_dropdown_setting('shailan_dm_align');
-	$width = get_dropdown_setting('shailan_dm_width');
+	$type = get_dropdown_setting( 'type' );
+	$exclude = get_dropdown_setting( 'exclude' );
+	$inline_style = get_dropdown_setting( 'style' );
+	$login = (bool) ( 'on' == get_dropdown_setting( 'login' ) );
+	$admin = (bool) ( 'on' == get_dropdown_setting( 'admin' ) );
+	$vertical = (bool) ( 'on' == get_dropdown_setting( 'vertical' ) );
+	$home = (bool) ( 'on' == get_dropdown_setting( 'home' ) );
+	$align = get_dropdown_setting( 'align' );
+	$width = get_dropdown_setting( 'width' );
 
 	$opts = array(
 		'type' => $type,
@@ -816,10 +816,10 @@ function shailan_dropdown_menu( $args = array() ){
 */
 function shailan_nav_menu_args_filter( $args ){
 
-	$replace_enabled = get_dropdown_setting( 'shailan_dm_location_enabled' );
+	$replace_enabled = get_dropdown_setting( 'location_enabled' );
 
 	if( 'on' == $replace_enabled ){
-		$theme_location = get_dropdown_setting( 'shailan_dm_location' );
+		$theme_location = get_dropdown_setting( 'location' );
 
 		if( $args['theme_location'] == $theme_location ){
 			$args['fallback_cb'] = 'shailan_dropdown_menu';
