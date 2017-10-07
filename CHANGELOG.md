@@ -3,6 +3,14 @@
 This page lists all the major changes to the **Dropdown Menu Widget** for WordPress.
 Please visit [Dropdown Menu Widget Homepage](http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/) for more information.
 
+### 1.9.6
+
+* Simplified settings page
+* Removed all unnecessary links & styles
+* Fixed help links
+* Removed table wrapper from menu code
+* Removed unused images and icons from themes
+
 ### 1.9.3
 
 * Updated WordPress version for compatibility.
