@@ -450,7 +450,7 @@ function options_page(){
 					'From URL' => '*url*',
 					'Custom CSS' => '*custom*',
 					'Color Scheme' => 'color-scheme',
-					'Web 2.0 by MetinSaylan' => plugins_url('/themes/web20.css', __FILE__),
+					'Web 2.0' => plugins_url('/themes/web20.css', __FILE__),
 					'Simple White' => plugins_url('/themes/simple.css', __FILE__),
 					'Wordpress Default' => plugins_url('/themes/wpdefault.css', __FILE__),
 					'Grayscale' => plugins_url('/themes/grayscale.css', __FILE__),
