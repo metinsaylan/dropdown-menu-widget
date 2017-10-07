@@ -4,7 +4,7 @@ Donate link: http://metinsaylan.com/donate/
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8
 Tested up to: 4.7
-Stable tag: 1.9.5
+Stable tag: 1.9.6
 
 Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery effects. Comes with various customizable CSS themes!
 
@@ -12,7 +12,7 @@ Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery effect
 
 **Dropdown Menu widget** adds a beautiful dropdown menu, listing pages and categories of your blog. You can also turn your WordPress navigation menus into beautiful dropdown menus using this plugin.
 
-Main Features:
+Features:
 
 * Automatically generated menus
 * Supports pages, categories and custom menus
@@ -36,7 +36,6 @@ If you like this plugin, please [donate](http://metinsaylan.com/donate/).
 Please report issues on [Github Issues Page](https://github.com/shailancom/dropdown-menu-widget/issues).
 Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
 
-
 == Installation ==
 
 Dropdown menu widget is so easy to setup. Just follow the steps below to add it to your site.
@@ -51,23 +50,23 @@ Dropdown menu widget is so easy to setup. Just follow the steps below to add it 
 
 == Frequently Asked Questions ==
 
-= I don't have sidebar on my header, how can i add one? =
+= I don't have sidebar on my header, how can I add one? =
 
-Adding a sidebar in wordpress is a quite easy task. You can [read instructions here](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/). If you don't want to add a sidebar consider using PHP template tag instead.
+Adding a sidebar in WordPress is a quite easy task. You can [read instructions here](http://metinsaylan.com/wordpress/2010/04/30/how-to-widgetize-your-theme-in-3-simple-steps/). If you don't want to add a sidebar consider using [PHP template tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/) instead.
 
 = I added this widget to my sidebar but it looks all weird! =
 
-This widget is intented for *wide header widget areas*, not regular sidebars. You can [add a sidebar](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/) to your theme or you can [get a theme](http://metinsaylan.com/wordpress/plugins/dropdown-menu/themes) that supports dropdown menu widget. If you don't want to add a sidebar, you can use php template tag instead. Read [php template tag](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/) instructions [here](http://metinsaylan.com/2773/dropdown-menu-widget-template-tag-usage-explained/).
+This widget is intended for *wide header widget areas*, not regular sidebars. You can [add a sidebar](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/) to your theme or you can [get a theme](http://metinsaylan.com/lists/themes-support-dropdown/) that supports dropdown menu widget. If you don't want to add a sidebar, you can use [PHP template tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/) instead.
 
-= Can i create my own theme? =
+= Can I create my own theme? =
 
 Since this plugin works on CSS, if you are capable of writing CSS, you can customize the theme as you like it. If you want full customization select `None` as your theme.
 
-= I don't know CSS, how can i customize it? =
+= I don't know CSS, how can I customize it? =
 
 Plugin comes with various themes already installed. If you don't like existing themes put `dropdown.css` in your theme root and it will be selectable on themes list ;)
 
-= I found a bug! Where do i submit it? =
+= I found a bug! Where do I submit it? =
 
 Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://github.com/shailancom/dropdown-menu-widget/issues) page.
 
@@ -79,6 +78,6 @@ Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://
 
 == Changelog ==
 
-= 1.9.4 =
+= 1.9.6 =
 
 A list of all changes can be found on [Changelog page on Github](https://github.com/shailancom/dropdown-menu-widget/blob/master/CHANGELOG.md)
