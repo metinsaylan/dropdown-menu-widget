@@ -471,7 +471,7 @@ function options_page(){
 				$theme_name = $theme_names[$theme];
 				echo "<strong>" . $theme_name . "</strong>";
 			?>
-			<a href="options-general.php?page=dropdown-menu" style="text-decoration:none;"><?php esc_attr_e('Change theme &rarr;', 'shailan-dropdown-menu'); ?></a>
+			<a href="options-general.php?page=dropdown-menu" target="_blank" style="text-decoration:none;"><?php esc_attr_e('Change theme &rarr;', 'shailan-dropdown-menu'); ?></a>
 		</p>
 
 		<br class="clear" />
