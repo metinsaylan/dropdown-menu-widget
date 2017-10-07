@@ -5,11 +5,12 @@ Please visit [Dropdown Menu Widget Homepage](http://metinsaylan.com/projects/wor
 
 ### 1.9.6
 
-* Simplified settings page
-* Removed all unnecessary links & styles
-* Fixed help links
-* Removed table wrapper from menu code
-* Removed unused images and icons from themes
+* Fixed rename homepage problem
+* Removed table wrapper around the menu, added a div instead
+* Removed all unnecessary files (well nearly all)
+* Removed tabs and simplified settings page for responsiveness
+* Updated documentation links and descriptions
+* Removed crappy widget footer links
 
 ### 1.9.3
 
