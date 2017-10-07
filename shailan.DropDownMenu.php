@@ -203,9 +203,9 @@ function options_page(){
 		"2" => __("Dropdown Menu Widget settings are reset.", "shailan-dropdown-menu")
 	);
 
-	$navigation = '<div id="stf_nav"><a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/">Plugin page</a> | <a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/help/">Usage</a> | <a href="http://metinsaylan.com/donate/">Donate</a> | <a href="http://metinsaylan.com/wordpress/plugins/">Get more plugins..</a></div>';
+	$navigation = '<div id="stf_nav"><a href="http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/" target="_blank">Plugin page</a> | <a href="http://metinsaylan.com/docs/dropdown-menu-widget-help/" target="_blank">Usage</a> | <a href="http://metinsaylan.com/donate/" target="_blank">Donate</a> | <a href="http://metinsaylan.com/projects/" target="_blank">Get more plugins..</a></div>';
 
-	$footer_text = '<em><a href="http://metinsaylan.com/wordpress/plugins/dropdown-menu/">Dropdown Menu Widget</a> by <a href="http://metinsaylan.com/">SHAILAN</a></em>';
+	$footer_text = '';
 
 	include_once( "stf-page-options.php" );
 
