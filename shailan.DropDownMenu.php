@@ -1,16 +1,16 @@
 <?php
 /*
 Plugin Name: Dropdown Menu Widget
-Plugin URI: http://metinsaylan.com/wordpress/plugins/dropdown-menu
-Description: A multi widget to generate drop-down menus from your pages, categories & navigation menus. You can find more widgets, plugins and themes at <a href="http://metinsaylan.com">metinsaylan.com</a>.
+Plugin URI: http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/
+Description: Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects. 
 Tags: dropdown, menu, css, css-dropdown, navigation, widget, dropdown-menu, customization, theme, jquery, template, multi-color, theme
-Version: 1.9.5
+Version: 1.9.6
 Author: Metin Saylan
 Author URI: http://metinsaylan.com/
 Text Domain: shailan-dropdown-menu
 */
 
-define('VERSION', '1.9.5');
+define('VERSION', '1.9.6');
 
 class shailan_DropdownWidget extends WP_Widget {
 
