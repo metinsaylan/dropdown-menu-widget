@@ -378,8 +378,7 @@ function options_page(){
 
 				} // switch ($type)
 
-			echo $nl . "</div>";
-
+			echo $nl . "</div>"; ?>
               <?php echo $after_widget; $this->footer(); ?>
         <?php
     }
