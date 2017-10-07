@@ -2,7 +2,7 @@
 /*
 Plugin Name: Dropdown Menu Widget
 Plugin URI: http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/
-Description: Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects. 
+Description: Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects.
 Tags: dropdown, menu, css, css-dropdown, navigation, widget, dropdown-menu, customization, theme, jquery, template, multi-color, theme
 Version: 1.9.6
 Author: Metin Saylan
@@ -457,11 +457,11 @@ function options_page(){
 					'Aqua' => plugins_url('/themes/aqua.css', __FILE__),
 					'Blue gradient' => plugins_url('/themes/simple-blue.css', __FILE__),
 					'Shiny Black' => plugins_url('/themes/shiny-black.css', __FILE__),
-					'Flickr theme' =>  plugins_url('/themes/flickr.com/default.ultimate.css', __FILE__),
-					'Nvidia theme' =>  plugins_url('/themes/nvidia.com/default.advanced.css', __FILE__),
-					'Adobe theme' => plugins_url('/themes/adobe.com/default.advanced.css', __FILE__),
-					'MTV theme' => plugins_url('/themes/mtv.com/default.ultimate.css', __FILE__),
-					'Hulu theme' => plugins_url('/themes/hulu/hulu.css', __FILE__),
+					'Flickr' =>  plugins_url('/themes/flickr.com/default.ultimate.css', __FILE__),
+					'Nvidia' =>  plugins_url('/themes/nvidia.com/default.advanced.css', __FILE__),
+					'Adobe' => plugins_url('/themes/adobe.com/default.advanced.css', __FILE__),
+					'MTV' => plugins_url('/themes/mtv.com/default.ultimate.css', __FILE__),
+					'Hulu' => plugins_url('/themes/hulu/hulu.css', __FILE__),
 					'Rounded Corners' => plugins_url('/themes/rounded-corners.css', __FILE__),
 					'Rounded Corners Light' => plugins_url('/themes/rounded-corners-light.css', __FILE__),
 					'Pills' => plugins_url('/themes/pills.css', __FILE__)
