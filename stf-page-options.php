@@ -20,9 +20,9 @@
 <em>Please note, demo uses <a href="http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
 
 <form method="post">
-<div id="options-tabs">
+<div id="ddmw_options">
 
-<div class="tab_container">
+<div class="ddmw_options_container">
 
 	<div id="tabs-footer" class="clearfix">
 		<p class="submit">
