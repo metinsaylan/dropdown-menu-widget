@@ -1,31 +1,6 @@
 
 /** Dropdown Menu Widget Admin Styles */
 
-#shailancom{ float:right; width:250px;  }
-#shailancom li{ font-size: 115%; line-height:150%; margin-bottom:1em; }
-#stf_nav{ font-size: 110%; line-height:150%; margin-bottom:1em;color:#ddd; }
-#stf_nav a{ text-decoration:none }
-#donate {
-	padding: 10px;
-	border: 1px solid #E6DB55;
-	border-radius: 10px;
-	margin-bottom: 15px;
-	font-style: italic;
-	text-align: center;
-	background: lightYellow;
-	color: #827500;
-}
-
-.stf_share{ background:#ededed; padding:5px; border-radius:5px; overflow:hidden; margin-right:15px; }
-.share-label, .share-button{ display:inline; float:left; margin-right:10px; }
-.share-label{
-	margin-top: 3px;
-	margin-left: 5px;
-	font-size: 16px;
-	text-shadow: white 1px 1px 0;
-	color: #aaa;
-} .stf_share:hover .share-label{ color:#21759B }
-.tweet{ margin-top:2px; }
 .panel{ background: #ededed; border-bottom:1px solid #ddd; }
 a.helplink{ color:#666; text-decoration:none; }
 
