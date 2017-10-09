@@ -368,13 +368,13 @@ function options_page(){
 						$menu_args = wp_parse_args( array('walker'=>$page_walker) , $menu_args );
 					}
 
-					echo $dropdown_wrapper_open;
-					do_action('dropdown_before');
-					echo $dropdown_open;
-					  wp_nav_menu($menu_args);
-					echo $dropdown_close;
-					do_action('dropdown_after');
-					echo $dropdown_wrapper_close;
+					//echo $dropdown_wrapper_open;
+					//do_action('dropdown_before');
+					//echo $dropdown_open;
+					  wp_nav_menu( $menu_args );
+					//echo $dropdown_close;
+					//do_action('dropdown_after');
+					//echo $dropdown_wrapper_close;
 
 				} // switch ($type)
 
