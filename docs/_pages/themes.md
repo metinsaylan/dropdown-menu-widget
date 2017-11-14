@@ -1,5 +1,5 @@
 ---
-layout: pagex
+layout: page
 title: Themes
 subtitle: Dropdown Menu Widget Themes
 desc: Built-in CSS themes for Dropdown Menu Widget

@@ -1,5 +1,5 @@
 ---
-layout: pagex
+layout: page
 title: Installation
 desc: How to get dropdown menu widget up and running in seconds.
 permalink: /installation/
