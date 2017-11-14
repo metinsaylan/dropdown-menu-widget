@@ -17,14 +17,9 @@ desc: Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery 
 * Supports Multiple Instances
 * Can be embedded via <a title="Dropdown Menu Widget Template Tag Usage Explained" href="/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/">PHP Template Tag</a>
 
-<p class="btn-wrap">
-<a class="btn btn-inline btn-lg btn-success" href="https://wordpress.org/plugins/dropdown-menu-widget/" rel="noopener">Download</a>
-<a class="btn btn-inline btn-lg" title="Please support, If you like this plugin." href="http://metinsaylan.com/donate" rel="noopener">Donate</a>
-</p>
-
 ---
 
-> **Note:**
+> **Notes:**
 >  * Menu themes use <strong>CSS</strong>. That's why it doesn't work same on all themes. If you think it has styling issues.
 >  * Effects use <strong>jQuery</strong>. If your theme changes default jQuery, effects may not work.
 >  * <strong>IE6</strong> is not supported. Why not <strong>upgrade your browser</strong>?
