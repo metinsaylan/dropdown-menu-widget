@@ -1,5 +1,7 @@
 ---
 title: Dropdown Menu Widget
+subtitle: A classy navigation for your WordPress site
+desc: Simple Pages/Categories/Custom dropdown navigation menus with nice jQuery effects.
 ---
 
 {% include extimg.html img_src="https://ps.w.org/dropdown-menu-widget/assets/banner-772x250.png" width="772" height="250" %}
