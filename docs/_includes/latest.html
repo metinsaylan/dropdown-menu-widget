@@ -1,0 +1,5 @@
+<ul class="post-loop">
+{% for post in site.posts limit:5 %}
+  <li><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <small class="post-date">{{ post.date | date_to_string }}</small></a></li>
+{% endfor %}
+</ul>

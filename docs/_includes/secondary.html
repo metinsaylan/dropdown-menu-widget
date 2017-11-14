@@ -1,31 +1,13 @@
 <div id="secondary">
 
 <aside class="mb">
-  <a class="btn btn-inline btn-success" href="https://wordpress.org/plugins/dropdown-menu-widget/" rel="noopener">Download</a>
+  <a class="btn btn-inline btn-lg btn-success" href="https://wordpress.org/plugins/dropdown-menu-widget/" rel="noopener">Download</a>
   <a class="btn btn-inline" title="Please support, If you like this plugin." href="http://metinsaylan.com/donate" rel="noopener">Donate</a>
 </aside>
 
 <aside class="mb">
-<h3>Posts about Dropdown Menu Widget</h3>
-{% include tagloop.html tag='dropdown menu widget' %}
+<h3>Latest Updates</h3>
+{% include latest.html %}
 </aside>
-
-{% if site.related_posts %}
-  <aside class="related mt mb" role="complementary">
-    <h2>Latest Posts</h2>
-    <ul class="related-posts">
-      {% for post in site.related_posts limit:4 %}
-        <li>
-          <h3>
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.title }}
-              <small>{{ post.date | date_to_string }}</small>
-            </a>
-          </h3>
-        </li>
-      {% endfor %}
-    </ul>
-  </aside>
-{% endif %}
 
 </div>
