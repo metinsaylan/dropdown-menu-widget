@@ -1,9 +1,8 @@
 # Site authors should be added on this page
-roguedev:
-  name: John Doe
-  display_name: johndoe
+metinsaylan:
+  name: Metin Saylan
+  display_name: metinsaylan
   gravatar: 425a023c04e058a68d2fa93ea41593e2 # md5 hash of email
-  email: john.doe@example.com
-  web: http://example.com
-  twitter: johndoe
-  github: johndoe
+  web: http://metinsaylan.com/
+  twitter: metinsaylan
+  github: metinsaylan
