@@ -42,7 +42,3 @@ Dropdown menu widget is so easy to setup. Just follow the steps below to add it 
 * Done. Enjoy!
 
 > **Note:** If your theme doesn't support header widget areas, you can add dropdown menu using php template tag. Read how to add it here. Read more about custom dropdown template tags here.
-
-### Posts about Dropdown Menu Widget
-
-{% include tagloop.html tag='dropdown menu widget' %}
