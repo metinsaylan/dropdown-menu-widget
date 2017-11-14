@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts h-feed" role="main">
+  {% for post in paginator.posts %}
+  {% assign author = site.data.authors[post.author] %}
+  <div class="post h-entry listing">
+    <a class="post-link u-url" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+      <h2 class="post-title e-name">{{ post.title }}</h2>
+      <div class="post-meta">
+        <time class="post-date dt-published" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+          <span class="separator muted"> // </span>
+        <span class="p-author h-card">{{ author.display_name }}</span>
+      </div>
+      {% if post.desc %}<p class="p-summary">{{ post.desc }}</p>{% else %}<p class="p-summary">{{ post.excerpt | strip_html | truncatewords: 15 }}<span class="muted">...</span></p>{% endif %}
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<aside class="pagination text-center muted pad2 clr" role="navigation">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</aside>

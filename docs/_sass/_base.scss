@@ -1,0 +1,27 @@
+// BASE =========================================
+/* Text alignments */
+.text-center{ text-align: center }
+.text-left{ text-align: left }
+.text-right{ text-align: right }
+
+/* Margins */
+.m0{ margin: 0 }
+.mb{ margin-bottom: $spacer2 }
+.mt{ margin-top: $spacer2 }
+.ma{ margin-left: auto; margin-right: auto }
+
+.p0{ padding: 0 }
+.pad{ padding: $spacer }
+.pad2{ padding: $spacer2 }
+.pt{ padding-top: $spacer }
+.pb{ padding-bottom: $spacer }
+
+.clr{ clear: both }
+
+.scroll {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.muted, .p-author, .post-date { color: $text-muted }
+.hide{display: none}

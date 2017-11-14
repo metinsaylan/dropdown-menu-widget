@@ -1,0 +1,42 @@
+---
+layout: default
+title: "404: Page not found"
+permalink: 404.html
+---
+<article class="page h-entry">
+  <header class="page-header">
+    <h1 class="page-title p-name">Page Not Found</h1>
+    <h2 class="subtitle">Hmm, seems like I didn't write that yet. </h2>
+  </header>
+
+  <blockquote>
+    ...in an infinite universe;  <br />
+    &nbsp;anything that could be imagined,  <br />
+    &nbsp; &nbsp; &nbsp; might somewhere exist.  <br />
+    <cite align="right" class="text-right">Dean Koontz</cite>
+  </blockquote>
+
+  <p class="lead p-summary">Here are some options for you to find your way:</p>
+  <div class="page-content e-content" role="main">
+    <ul>
+      <li><a href="{{ site.baseurl }}/">Head back home</a></li>
+      <li><a href="https://twitter.com/intent/tweet?text=@{{ site.author }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">Tweet this to me!</a></li>
+    </ul>
+  </div>
+</article>
+
+{% if site.google_analytics %}
+<script type="text/javascript">
+/* Google Analytics error tracking */
+function check_ga() {
+  if ( typeof ga === 'function' && document.referrer ) {
+    ga( 'send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer, {'nonInteraction': true});
+    // console.log('Loaded :'+ ga);
+  } else {
+    // console.log('Not loaded');
+    setTimeout(check_ga,100);
+  }
+}
+check_ga();
+</script>
+{% endif %}

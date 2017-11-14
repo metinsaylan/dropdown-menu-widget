@@ -1,0 +1,27 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html amp lang="en">
+{% include head.html %}
+<body class="layout-reverse">
+  <div class="wrap">
+
+      <div class="masthead mb pb pt">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>// {{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div><!-- container -->
+    </div><!-- wrap -->
+
+    {% include footer.html %}
+  </body>
+</html>

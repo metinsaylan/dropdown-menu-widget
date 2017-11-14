@@ -1,0 +1,12 @@
+---
+layout: page
+title: All Categories
+---
+
+<div class="tags-expo">
+  <div class="tags-expo-list">
+    {% for tag in site.categories %}
+    <a href="{{ site.baseurl }}/category/{{ tag[0] | slugify }}" title="{{ tag[0] }} Category Archives" class="tag post-cat">{{ tag[0] | capitalize }} <span class="cat-count item-count badge">{{ tag[1].size }}</span></a>
+    {% endfor %}
+  </div>
+</div>

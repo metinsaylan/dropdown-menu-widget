@@ -1,0 +1,10 @@
+<ul class="post-loop">
+{% assign post_exp = "post.categories contains '" | append: include.cat | append: "'" %}
+{% assign posts = site.posts | where_exp: "post", post_exp %}
+{% for post in posts %}
+  <li><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <small class="post-date">{{ post.date | date_to_string }}</small></a></li>
+{% endfor %}
+</ul>
+
+<a href="{{ site.baseurl }}{{ site.category_base }}{{ include.cat }}{{ site.feed_extension }}" class="btn btn-inline btn-success">
+Subscribe to Feed</a> <a href="{{ site.baseurl }}{{ site.category_page }}" class="btn btn-inline btn-default">View All Categories</a>

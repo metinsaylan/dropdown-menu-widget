@@ -1,0 +1,12 @@
+---
+layout: page
+title: All Tags
+---
+
+<div class="tags-expo">
+  <div class="tags-expo-list">
+    {% for tag in site.tags %}
+    <a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify }}" class="tag post-tag">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+</div>

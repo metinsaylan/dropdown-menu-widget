@@ -1,0 +1,44 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} // {{ site.tagline }}
+    {% else %}
+      {{ page.title }} // {{ site.title }} - {{ site.tagline }}
+    {% endif %}
+  </title>
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  {% if page.redirect_url %}
+  <noscript>
+    <meta http-equiv="refresh" content="0;URL={{ page.redirect_url }}">
+  </noscript>
+  {% endif %}
+
+</head>
+<body>
+
+  {% if page.redirect_url %}
+  <blockquote>
+    {{ content }}
+    <br />
+    Redirecting you to {{ page.redirect_url }}. <br />
+    <br />
+    <a href="{{ page.redirect_url }}">Please click here to redirect now.</a>
+  </blockquote>
+
+  <script type='text/javascript'>//<![CDATA[
+    window.location.replace("{{ page.redirect_url }}");
+  //]]>
+  </script>
+  {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+a.button, a.btn {
+    border: $border-width solid;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 3px 11px;
+    margin: $spacer 0;
+
+    &:hover, &:focus {
+      background: #fff;
+      box-shadow: #7bbbe8 0 0 7px;
+    }
+}
+
+a.btn.btn-success {
+    border-color: #54d469;
+    color: #47bf5b;
+}
+
+a.btn.btn-lg {
+    padding: 10px 30px;
+}
+
+.btn-inline{ display: inline-block; }
+.btn-inline+.btn-inline { margin-left: $spacer; }
+
+div.btn-wrap{
+  border-width: $border-width 0;
+  margin: 2em 0;
+  text-align: center;
+  p{ margin-bottom: 0 }
+}
+
+a.btn.btn-reply {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-right-radius: 0;
+    background: #55acee;
+    margin: 4px 4px 0;
+    border-color: #55acee;
+    color: #fafaf8;
+}
+
+.tag{
+  display: inline-block;
+  border: $border-width solid;
+  border-radius: 8px;
+  padding: 3px 11px;
+  margin: 4px 1px 3px 0;
+}
+
+a.post-tag {
+  background-color: #fff;
+  border-bottom-left-radius: 0;
+}
+
+a.post-cat {
+    background-color: #268bd2;
+    border-color: #268bd2;
+    color: #fff;
+    border-top-right-radius: 0;
+}
+
+.tags-expo-list a.post-tag, .tags-expo-list a.post-cat {
+    background: $gray-lightest;
+    border-color: $gray-lighter;
+    color: #268bd2;
+}
+
+.tags-expo:hover .tag {
+    opacity: .6;
+}
+
+.tags-expo-list a.tag:hover {
+    border-color: #268bd2;
+    color: #268bd2;
+    opacity: 1;
+}
+
+.badge {
+    color: #fff;
+    background: #bbb;
+    font-size: .7em;
+    display: inline-block;
+    padding: 0px 7px;
+    border-radius: 2em;
+    vertical-align: middle;
+}

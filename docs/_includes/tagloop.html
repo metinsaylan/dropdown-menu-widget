@@ -1,0 +1,9 @@
+<ul class="post-loop">
+{% assign post_exp = "post.tags contains '" | append: include.tag | append: "'" %}
+{% assign posts = site.posts | where_exp: "post", post_exp %}
+{% for post in posts %}
+  <li><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <small class="post-date">{{ post.date | date_to_string }}</small></a></li>
+{% endfor %}
+</ul>
+
+<a href="{{ site.baseurl }}{{ site.tag_page }}" class="btn btn-lg btn-success">View All Tags</a>

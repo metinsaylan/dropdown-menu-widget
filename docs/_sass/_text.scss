@@ -1,0 +1,138 @@
+// TEXT ====================================
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $spacer0;
+  font-family: $font-heading;
+  line-height: $lh-sm;
+  color: inherit;
+}
+h1, .h1 { font-size: $fs-h1; }
+h2, .h2 { font-size: $fs-h2; }
+h3, .h3 { font-size: $fs-h3; }
+h4, .h4 { font-size: $fs-h4; }
+h5 { font-size: $fs-h5; }
+h6 { font-size: $fs-h6; }
+
+@include mq-up(md) {
+  h1, .h1 { font-size: $fs-md-h1; }
+  h2, .h2 { font-size: $fs-md-h2; }
+  h3, .h3 { font-size: $fs-md-h3; }
+  h4, .h4 { font-size: $fs-md-h4; }
+  h5 { font-size: $fs-md-h5; }
+  h6 { font-size: $fs-md-h6; }
+}
+
+::selection {
+  background-color: $brand-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+// TEXT - UTILS ------------------
+.lead {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #555;
+  text-shadow: $gray-lightest 0 0 2px;
+  line-height: 1.6;
+  p { margin-bottom: 1.5rem; }
+}
+.lead.p-summary {
+    margin-bottom: 0;
+}
+
+hr {
+  margin: $spacer 0 $spacer1;
+  border: 0;
+  border-top: 5px solid $brand-light-color;
+}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+@include mq-up(md) {
+  .lead { font-size: 1.3rem; }
+}
+
+abbr {
+  color: $text-muted;
+  font-size:85%;
+  font-weight:700;
+  text-transform:uppercase;
+}
+abbr[title] {
+  border-bottom:1px dotted $text-muted;
+  cursor:help;
+}
+
+// TEXT - CODE ------------------
+mark,
+.mark {
+  padding: .2em;
+  background-color: $ligt-yellow;
+}
+
+code, kbd,
+pre, samp {
+  font-family: $font-family-monospace;
+}
+
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: $red;
+  background-color: $gray-lighter;
+  border-radius: $border-radius;
+}
+
+pre {
+  display: block;
+  margin: $spacer 0;
+  padding: $spacer;
+  font-size: $fs;
+  line-height: 1.4;
+  color: $gray-dark;
+
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+blockquote {
+  margin: $spacer 0 $spacer $spacer;
+  line-height: 1.6;
+  @include box-shadow();
+}
+
+
+@include mq-up(md) {
+  blockquote {
+    margin: $spacer2 0 $spacer2 $spacer2;
+    line-height: 1.8;
+  }
+}
+
+kbd {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #fff;
+  background-color: $gray-dark;
+  border-radius: $border-radius-sm;
+
+  kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+  }
+}

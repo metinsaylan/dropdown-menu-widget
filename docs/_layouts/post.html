@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{% assign author = site.data.authors[page.author] %}
+<article class="post h-entry">
+  <header class="post-header">
+    <h1 class="post-title p-name"><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" rel="bookmark" class="u-url">{{ page.title }}</a></h1>
+    {% if page.desc %}<p class="lead p-summary">{{ page.desc }}</p>{% endif %}
+    <p class="post-meta">
+      <time class="post-date dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+      <span class="separator muted"> // </span>
+      <span class="entry-author"><a class="p-author h-card" href="{{ author.web }}">{{ author.display_name }}</a></span>
+    </p>
+  </header>
+
+  <div class="post-content e-content" role="main">
+    {{ content }}
+  </div>
+
+  {% include share.html %}
+
+  <footer class="post-footer mt mb">
+    <div class="post-tags p-category">
+
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/category/{{category | slugify }}" class="tag post-cat" rel="tag">{{ category | upcase }}</a>
+      {% endfor %}
+
+      {% if page.tags %}
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="tag post-tag" rel="tag"><span class="hash">#</span>{{ tag }}</a>
+      {% endfor %}
+      {% endif %}
+
+    </div>
+
+    <a href="https://twitter.com/intent/tweet?text=@{{ author.twitter }}&related=metinsaylan&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn btn-reply">Reply</a>
+  </footer>
+</article>
+
+{% include secondary.html %}
+
+<div class="post-tools">
+  <a href="https://google.com/search?q={{ page.title | cgi_escape }}" target="_blank">Search <em>{{ page.title }}</em> on Google</a>
+</div>
+
+<aside class="pagination mt mb pad" role="navigation">
+  {% if page.previous.url %}
+    <a class="pagination-item older" href="{{site.baseurl}}{{page.previous.url}}">{{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="pagination-item newer" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}</a>
+  {% endif %}
+</aside>

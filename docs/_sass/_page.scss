@@ -1,0 +1,299 @@
+// GRID ===========================================
+.grid { @include clearfix(); }
+.unit { float: left; }
+.unit.half { width: 50%; }
+// HEADER =========================================
+.masthead {
+  background: #e8e8e8;
+  border-bottom: 3px solid #fff;
+  box-shadow:inset $gray-lighter 2px -2px 20px;
+}
+
+.masthead-title {
+    margin:0;
+
+    a {
+      color: $gray-dark;
+    }
+
+    small {
+      color: $brand-color;
+      font-size: 100%;
+    }
+}
+
+// CONTAINER ======================================
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:28rem;
+  padding-left: $spacer;
+  padding-right: $spacer;
+}
+
+article {
+    width: 100%;
+    float: none;
+}
+
+div#secondary {
+    float: none;
+    width: 100%;
+}
+
+div#ad-after {
+    max-height: 300px;
+}
+
+@media (min-width: 38em) {
+  .container { max-width:32rem; }
+}
+
+@media (min-width: 1120px) {
+  .container { max-width:1120px; }
+
+  .post.listing {
+      float: left;
+      width: 47%;
+      margin: 0 15px 2em;
+      min-height: 278px;
+  }
+
+  .post.listing:first-child {
+      width: calc(94% + 30px);
+  }
+
+  .post.listing:first-child h2 {
+      font-size: 50px;
+      max-width: 70%;
+  }
+
+  .post-share {
+    position: fixed;
+    right: 3em;
+    top: 130px;
+    width: 3em;
+}
+
+  article {
+      width: 730px;
+      float: left;
+  }
+
+  div#secondary {
+      float: right;
+      width: 300px;
+  }
+
+  div#ad-after {
+      width: 300px;
+      max-height: 600px;
+      background: #eaeae8;
+  }
+
+  .post-tools {
+      clear: both;
+  }
+}
+
+// PAGE COMMON ====================================
+
+.page, .post, .page-header, .post-header { margin-bottom: $spacer; }
+
+.post.listing {
+    padding: 30px;
+    border: $border-width solid #fff;
+    margin-bottom: $spacer2;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 14px 0px;
+}
+
+.post-content,
+.page-content {
+
+  p, ul, ol { margin-bottom: 1.3rem; }
+
+  p+ul { margin-top: -$spacer0; }
+
+  h2 {
+    margin-top: $spacer2;
+    margin-bottom: $spacer;
+  }
+
+  h3 {
+    margin-top: $spacer1;
+    margin-bottom: $spacer0;
+    color: $brand-color;
+  }
+
+  img.aligncenter{
+    margin: $spacer0 auto;
+  }
+}
+
+@include mq-up(md) {
+  .page-header,
+  .post-header {
+    margin-bottom: $spacer2;
+  }
+
+  .post-content,
+  .page-content {
+    font-size: $fs-md;
+    line-height: $lh-md;
+
+    p, ul, ol { margin-bottom: $spacer1; }
+
+    h2 {
+      margin-top: $spacer4;
+      margin-bottom: $spacer1;
+    }
+
+    h3 {
+      margin-top: $spacer2;
+      margin-bottom: $spacer;
+    }
+  }
+}
+
+// RELATED POSTS ================================
+.related {
+    padding-bottom: $spacer2;
+    padding-top: $spacer3;
+    position: relative;
+}
+
+.related::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15px;
+    background: #fefefe;
+    background: -webkit-radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%);
+    border-top: $border-width solid #fff;
+}
+
+.related h2{
+    color: $text-muted;
+}
+
+.related-posts {
+    list-style: none;
+    padding-left: 0;
+}
+.related-posts li small {
+    color: $text-muted;
+    font-size:75%;
+}
+
+// PAGE HOME ====================================
+
+.select-hide,
+.select-show {
+  background-color: $gray-lighter;
+  color: $gray-lighter;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+
+.select-show {
+  color: #fff;
+  background-color: $gray-dark;
+}
+
+// PAGE ARTICLES & POST ====================================
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: $spacer2;
+
+  .post-title {
+    color: $brand-color;
+    margin-bottom: $spacer0;
+  }
+
+  .post {
+    margin-bottom: $spacer2;
+  }
+}
+
+.post-link,
+.post-link:hover,
+.post-link:focus {
+  text-decoration: none;
+  color: $body-color;
+}
+
+// Reset the responsive content
+p.post-desc {
+  margin-bottom: $spacer;
+  margin-top: -$spacer0;
+}
+
+// PAGE POST - BAR ------------------
+.post .post-header::after,
+.post-link::after {
+  content: '';
+  display: block;
+  width: $spacer4;
+  height: 5px;
+  background: $brand-color;
+}
+
+.post-link::after {
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: .5s all cubic-bezier(.5, -.2, .25, 1.2);
+}
+
+.post-link:focus::after,
+.post-link:hover::after {
+  -webkit-transform: scaleX(3);
+  transform: scaleX(3);
+}
+
+// PAGE WORK & PROJECTS ====================================
+.project {
+  margin-right: $spacer;
+  border: $border-width solid $gray-lighter;
+  padding: $spacer;
+  margin-bottom: $spacer;
+}
+
+.project-title {
+  margin-bottom: $spacer1;
+
+  a {
+    font-weight: bold;
+    border-bottom: 5px solid $brand-light-color;
+    padding-bottom: $spacer0;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-bottom-color: $brand-color;
+    }
+  }
+}
+
+.project p {
+    font-size: 16px;
+    display: block;
+    height: 4.5em;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+@include mq-up(md) {
+  .projects {
+    margin-top: $spacer2;
+  }
+
+  .project-title {
+    margin-bottom: $spacer2;
+  }
+}

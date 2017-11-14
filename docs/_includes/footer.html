@@ -1,0 +1,36 @@
+
+<footer class="mb pb pt text-center muted clr">
+  &copy; {{ site.time | date: '%Y' }} - <a href="{{ site.url }}{{ site.baseurl }}" class="muted">{{ site.title }}</a>
+</footer>
+
+<p class="small text-center muted">
+  Powered by <a class="muted" href="http://github.com/" target="_blank">GitHub</a> &amp; <a class="muted" href="http://metinsaylan.com/roguedev-jekyll-theme">RogueDev</a>
+</p>
+
+{% if site.google_analytics %}
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "{{ site.google_analytics }}"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    },
+    "outboundLinks": {
+        "on": "click",
+        "selector": "a",
+        "request": "event",
+        "vars": {
+          "eventCategory": "outbound",
+          "eventAction": "click",
+          "eventLabel": "${outboundLink}"
+        }
+    }
+  }
+}
+</script>
+</amp-analytics>
+{% endif %}

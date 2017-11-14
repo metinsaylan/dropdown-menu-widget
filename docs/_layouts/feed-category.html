@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ page.category_title | capitalize }} Category Feed - {{ site.name | xml_escape }}</title>
+    <description>Category feed for all posts filed under {{ page.category_title }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}{{ site.category_page }}{{ page.category_title | slugify }}</link>
+    <atom:link href="{{ site.url | prepend: site.baseurl }}{{ site.category_page }}{{ page.category_title | slugify }}/feed/" rel="self" type="application/rss+xml" />
+    {% assign post_exp = "post.categories contains '" | append: page.category_title | append: "'" %}
+    {% assign posts = site.posts | where_exp: "post", post_exp %}
+    {% for post in posts limit:10 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.excerpt | xml_escape | strip_html }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

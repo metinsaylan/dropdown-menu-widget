@@ -1,0 +1,43 @@
+<amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+
+  <div class="amp-close-image" on="tap:sidebar.close" role="button" tabindex="1">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+      <line x1="1" y1="19" x2="19" y2="1" stroke="#fff" stroke-width="3"></line>
+      <line x1="1" y1="1" x2="19" y2="19" stroke="#fff" stroke-width="3"></line>
+    </svg>
+  </div>
+
+  <aside class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </aside>
+
+  <nav class="sidebar-nav" role="navigation">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+
+      {% for link in site.navigation %}
+        {% assign active = nil %}
+        {% if page.url contains link.url %}
+          {% assign active = 'active' %}
+        {% endif %}
+      <a href="{{ link.url | prepend: site.baseurl }}" class="sidebar-nav-item {{ active }}" {% if link.desc %} title="{{ link.desc }}" {% endif %}>{{ link.title }}</a>
+      {% endfor %}
+
+  </nav>
+
+  <aside class="sidebar-item">
+    {% if site.github_username %}
+      <a target="_blank" rel="external" href="https://github.com/{{ site.github_username }}">Github</a>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <a target="_blank" rel="external" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+    {% endif %}
+  </aside>
+
+</amp-sidebar>
+
+<div role="button" tabindex="0" on="tap:sidebar.toggle" class="sidebar-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>

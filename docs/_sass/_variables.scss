@@ -1,0 +1,88 @@
+// COLORS ====================================
+
+// COLORS - INDEX ------------------
+$gray-dark:                 #333;
+$gray:                      #cccccc;
+$gray-light:                #afafaf;
+$gray-lighter:              #e5e5e5;
+$gray-lightest:             #fafaf8;
+
+$blue:                      #268bd2;
+$light-blue:                lighten($blue, 45%);
+$dark-blue:                 darken($blue, 20%);
+
+$ligt-yellow:               #fcf8e3;
+$red:                       #bd4147;
+
+// COLORS - BRAND ------------------
+$brand-color:               #850086;
+$brand-light-color:         #d0afd0;
+$brand-secondary:           $gray-dark;
+$text-muted:                $gray-light;
+
+// GLOBALS  ====================================
+
+$body-bg:                   $gray-lightest;
+$body-color:                $gray-dark;
+
+// GLOBALS - LINKS ------------------
+$link-color:                $blue;
+$link-decoration:           none;
+$link-hover-color:          $dark-blue;
+$link-hover-decoration:     none;
+
+// GLOBALS - SPACERS ------------------
+$spacer:                    1rem;
+$spacer0:                   $spacer/2;
+$spacer1:                   $spacer * 1.5;
+$spacer2:                   $spacer * 2;
+$spacer3:                   $spacer * 2.5;
+$spacer4:                   $spacer * 3;
+
+// GLOBALS - BORDERS ------------------
+$border-width:              3px;
+$border-radius:             .4rem;
+$border-radius-sm:          .25rem;
+$border-radius-lg:          .5rem;
+
+// GLOBALS - FONTS ------------------
+$font-family:               'Roboto', sans-serif;
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-heading:              'Roboto Condensed', sans-serif;
+
+$lh:                        1.5;
+$lh-sm:                     1.1;
+$lh-md:                     1.6;
+
+$fs-root:                   20px;
+$fs:                        .8rem;
+$fs-md:                     1rem;
+
+/* http://type-scale.com/?size=20&scale=1.200&text=Dos%20Batch%20to%20Organize%20Photos%20By%20Date&webfont=Roboto%2BCondensed&font-family=%27Roboto%20Condensed%27%2C%20serif&font-weight=700&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333*/
+$fs-h1:                     2.074em;
+$fs-h2:                     1.728rem;
+$fs-h3:                     1.44rem;
+$fs-h4:                     1.2rem;
+$fs-h5:                     1rem;
+$fs-h6:                     0.889rem;
+
+$fs-md-h1:                  2.441rem;
+$fs-md-h2:                  1.953rem;
+$fs-md-h3:                  1.563rem;
+$fs-md-h4:                  1.25rem;
+$fs-md-h5:                  1rem;
+$fs-md-h6:                  .8rem;
+
+// RESPONSIVE ====================================
+
+$mq-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);
+
+$container-widths: (
+  sm: 620px,
+  md: 748px
+);

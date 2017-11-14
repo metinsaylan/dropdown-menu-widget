@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "variables";        // Your Sass variables should go there
+@import "mixins";           // Your additional mixins should go there
+
+@import "reboot";           // Opinionated reboot/normalize/reset css
+@import "base";             // Base classes
+@import "text";             // The type related css
+@import "buttons";          // Links and buttons
+@import "page";             // Styles specific to the pages
+
+@import "syntax";           // Styles specific to the pages
+@import "theme";            // Styles specific to the pages
