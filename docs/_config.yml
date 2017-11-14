@@ -1,0 +1,78 @@
+
+title:        dropdown menu widget
+tagline:      'automatic navigation'
+description:  another free plugin for wordpress by metinsaylan.
+url:          http://metinsaylan.com
+imgbase:      https://s3.eu-central-1.amazonaws.com/ms.static #will change this after moving files
+baseurl:      '/dropdown-menu-widget' # the subpath of your site, e.g. /blog
+permalink:    pretty   # how should we display posts url
+
+# Pagination settings
+paginate: 5                           # number of posts to show per page
+paginate_path: "/page:num/"  # link scheme for articles, should be letf as is
+# excerpt_separator: <!--more-->
+
+# Navigation settings
+# Used to define the navigation menu items
+# > Title is the tile of the navigation item, url the url and desc is the tooltip
+navigation:
+  - title: Projects
+    url: /projects/
+    desc: Stuffs I like to do
+  - title: About
+    url: /about/
+    desc: Learn about me
+  - title: Contact
+    url: /contact/
+    desc: Contact me
+#  - title: Donate
+#    url: /donate/
+#    desc: Support me!
+#  - title: Search
+#    url: /search/
+#    desc: Search this site!
+
+# Where are tags and categories displayed
+tag_page: '/tags/'
+tag_base: '/tag/'
+category_page: '/categories/'
+category_base: '/category/'
+feed_extension: '/feed/'
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Used by Jekyll to recognize what is a post and what is a page
+defaults:
+  - scope:
+      path: ''
+    values:
+      author: metinsaylan
+      image: /assets/img/site-banner.png
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+
+# Markdown parser settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false          # you can change this if you feel like it
+  parse_block_html: true    # allow parsing html inside markdown
+include:
+  - _pages                  # all your pages can be put inside pages (except articles)
+exclude:
+  - README.md
+  - vendor
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag        # https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-mentions
