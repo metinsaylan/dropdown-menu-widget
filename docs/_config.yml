@@ -1,6 +1,6 @@
 
 title:        dropdown menu widget
-tagline:      'automatic navigation'
+tagline:      'full automatic navigation for wordpress'
 description:  another free plugin for wordpress by metinsaylan.
 url:          http://metinsaylan.com
 imgbase:      https://s3.eu-central-1.amazonaws.com/ms.static #will change this after moving files
@@ -16,18 +16,15 @@ paginate_path: "/page:num/"  # link scheme for articles, should be letf as is
 # Used to define the navigation menu items
 # > Title is the tile of the navigation item, url the url and desc is the tooltip
 navigation:
-  - title: Projects
-    url: /projects/
-    desc: Stuffs I like to do
   - title: About
     url: /about/
     desc: Learn about me
   - title: Contact
     url: /contact/
     desc: Contact me
-#  - title: Donate
-#    url: /donate/
-#    desc: Support me!
+  - title: Donate
+    url: /donate/
+    desc: Support me!
 #  - title: Search
 #    url: /search/
 #    desc: Search this site!
