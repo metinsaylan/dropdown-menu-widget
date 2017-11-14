@@ -19,7 +19,7 @@ navigation:
   - title: Installation
     url: /installation/
     desc: Installation
-  - title: Help
+  - title: Options Help
     url: /help/
     desc: Help
   - title: Troubleshooter
