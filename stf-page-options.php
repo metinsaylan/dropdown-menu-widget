@@ -1,5 +1,4 @@
 <div class="wrap stf_options_page">
-	<?php screen_icon(); ?>
 	<h2><?php echo esc_html( $title ); ?></h2>
 
 <!-- Notifications -->
@@ -17,7 +16,7 @@
 <div class="stf_options">
 
 <div id="demo"><h3>Menu Demo:</h3><?php shailan_dropdown_menu(); ?><br />
-<em>Please note, demo uses <a href="http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
+<em>Please note, demo uses <a href="https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/" target="_blank">php template tag</a>.</em></div>
 
 <form method="post">
 <div id="ddmw_options">
