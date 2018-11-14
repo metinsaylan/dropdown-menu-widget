@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 4.7
 Stable tag: 1.9.7
 
-Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects. 
+A Dropdown Menu Plugin to create automatic navigation using Pages, Categories or Custom Menu Items. Comes with customizable themes and jquery effects.
 
 == Description ==
 
@@ -81,5 +81,7 @@ Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://
 = 1.9.7 =
 * Fixed deprecated function errors
 * Updated readme links
+* Removed plugin activation redirect
+* Fix capability for options page
 
 A list of all changes can be found on [Changelog page on Github](https://github.com/shailancom/dropdown-menu-widget/blob/master/CHANGELOG.md)
