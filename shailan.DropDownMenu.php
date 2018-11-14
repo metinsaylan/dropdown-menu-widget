@@ -181,7 +181,9 @@ function install_default_settings(){
 function update_plugin_settings( $current_settings ){
 	//Add missing keys
 	foreach($this->options as $option){
-		if( array_key_exists ( 'id' , $option ) && !array_key_exists ( $option['id'] ,$current_settings ) ){
+		if( array_key_exists ( 'id' , $option ) 
+				&& !array_key_exists ( $option['id'] ,$current_settings
+				&& array_key_exists( 'std', $option ) ) ){
 			$current_settings[ $option['id'] ] = $option['std'];
 		}
 	}
