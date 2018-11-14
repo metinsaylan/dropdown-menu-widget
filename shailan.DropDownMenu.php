@@ -733,7 +733,10 @@ function get_dropdown_setting( $key, $default = '' ) {
 }
 
 // Register widget
-add_action('widgets_init', create_function('', 'return register_widget("shailan_DropdownWidget");'));
+function ddm_register_widget(){
+	register_widget("shailan_DropdownWidget");
+}
+add_action( 'widgets_init', 'ddm_register_widget' );
 
 /* Includes */
 include('shailan-page-walker.php'); // Load custom page walker

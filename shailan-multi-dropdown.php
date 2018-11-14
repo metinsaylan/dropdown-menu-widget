@@ -191,4 +191,7 @@ class shailan_MultiDropDown extends WP_Widget {
 } // class shailan_MultiDropDown
 
 // register widget
-add_action('widgets_init', create_function('', 'return register_widget("shailan_MultiDropDown");'));
+function ddm_register_multi_widget(){
+	register_widget("shailan_MultiDropDown");
+}
+add_action('widgets_init', 'ddm_register_multi_widget' );
