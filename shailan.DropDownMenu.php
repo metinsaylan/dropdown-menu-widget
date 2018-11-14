@@ -115,7 +115,7 @@ function admin_header(){
 	$page = add_options_page(
 		__('Settings for Dropdown Menu', 'shailan-dropdown-menu'),
 		__('Dropdown Menu', 'shailan-dropdown-menu'),
-		'edit_themes',
+		'manage_options',
 		$this->options_page,
 		array( &$this, 'options_page')
 	);
