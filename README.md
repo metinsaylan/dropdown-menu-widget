@@ -14,18 +14,18 @@
 * Customizable color scheme (select Custom Theme from options to activate)
 * Vertical or Horizontal Menus
 * Supports Multiple Instances
-* Can be embedded into theme using [PHP Template Tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
+* Can be embedded into theme using [PHP Template Tag](https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/)
 
 ### Documentation & Simple Tutorials
 
-* [Dropdown Menu Widget Help](http://metinsaylan.com/docs/dropdown-menu-widget-help/)
-* [Dropdown Menu PHP Template Tag Usage](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
-* [Using Custom Menus In Dropdown Menu Widget](http://metinsaylan.com/wordpress/2010/07/26/custom-dropdown-menu-using-wordpress-3-nav-menus/)
-* [Tutorial: Create your very own dropdown menu stylesheet](http://metinsaylan.com/wordpress/2010/04/04/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
-* [Hook: Append Categories Menu To Pages Menu](http://metinsaylan.com/wordpress/2011/02/10/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
-* [View all posts tagged `Dropdown Menu Widget`](http://metinsaylan.com/tag/dropdown-menu-widget/)
+* [Dropdown Menu Widget Help](https://metinsaylan.com/wordpress/plugins/dropdown-menu/help/)
+* [Dropdown Menu PHP Template Tag Usage](https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/)
+* [Using Custom Menus In Dropdown Menu Widget](https://metinsaylan.com/1025/custom-dropdown-menu-using-wordpress-3-nav-menus/)
+* [Tutorial: Create your very own dropdown menu stylesheet](https://metinsaylan.com/600/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
+* [Hook: Append Categories Menu To Pages Menu](https://metinsaylan.com/4570/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
+* [View all posts tagged `Dropdown Menu Widget`](https://metinsaylan.com/tag/dropdown-menu-widget/)
 
-If you like this plugin, please [donate](http://metinsaylan.com/donate/).
+If you like this plugin, please [donate](https://metinsaylan.com/donate/).
 
 Please report issues on [Github Issues Page](https://github.com/shailancom/dropdown-menu-widget/issues).
 Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
