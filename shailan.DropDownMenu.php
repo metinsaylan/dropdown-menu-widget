@@ -755,23 +755,6 @@ function shailan_dropdown_add_settings_link($links) {
 $plugin = plugin_basename(__FILE__);
 add_filter( "plugin_action_links_$plugin", 'shailan_dropdown_add_settings_link' );
 
-// After activation redirect
-register_activation_hook(__FILE__, 'shailan_dropdown_activate');
-add_action( 'admin_init', 'shailan_dropdown_redirect' );
-
-function shailan_dropdown_activate() {
-    add_option( 'shailan_dropdown_do_activation_redirect', true );
-}
-
-// Redirects to options page on activate
-function shailan_dropdown_redirect() {
-    if ( get_option( 'shailan_dropdown_do_activation_redirect', false ) ) {
-        delete_option( 'shailan_dropdown_do_activation_redirect' );
-		$url = admin_url( 'options-general.php?page=dropdown-menu' );
-        wp_redirect($url);
-    }
-}
-
 // Template tag support
 function shailan_dropdown_menu( $args = array() ){
 
