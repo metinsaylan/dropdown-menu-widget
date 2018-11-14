@@ -1,7 +1,7 @@
 <?php
 
-function help_icon($hash){
-	return " <a href=\"http://metinsaylan.com/docs/dropdown-menu-widget-help/#".$hash."\" target=\"_blank\" class=\"help-icon\">(?)</a>";
+function ddm_help_icon($hash){
+	return " <a href=\"https://metinsaylan.com/wordpress/plugins/dropdown-menu/help/#".$hash."\" target=\"_blank\" class=\"help-icon\">(?)</a>";
 }
 
 // Define themes
@@ -88,44 +88,44 @@ array(
 ),
 
 	array(  "name" => "Dropdown Menu Theme",
-	"desc" => "Skin for the menu".help_icon("menu-theme"),
+	"desc" => "Skin for the menu".ddm_help_icon("menu-theme"),
 	"id" => "shailan_dm_active_theme",
 	"std" => plugins_url("/dropdown-menu-widget/themes/web20.css"),
 	"options" => $themes,
 	"type" => "select"),
 
 	array(  "name" => "Theme URL",
-	"desc" => "If <strong>From URL</strong> is selected you can specify theme URL here. ".help_icon("theme-url"),
+	"desc" => "If <strong>From URL</strong> is selected you can specify theme URL here. ".ddm_help_icon("theme-url"),
 	"id" => "shailan_dm_theme_url",
 	"std" => "http://",
 	"type" => "text"),
 
 	array(  "name" => "Use Theme Location",
-	"desc" => "This option enables use of theme location.". help_icon("theme-location"),
+	"desc" => "This option enables use of theme location.". ddm_help_icon("theme-location"),
 	"id" => "shailan_dm_location_enabled",
 	"type" => "checkbox",
 	"std" => "off" ),
 
 	array(  "name" => "Theme Location",
-	"desc" => "This option will place dropdown menu automatically to the theme location.". help_icon("theme-location"),
+	"desc" => "This option will place dropdown menu automatically to the theme location.". ddm_help_icon("theme-location"),
 	"id" => "shailan_dm_location",
 	"type" => "select",
 	"options" => $_wp_registered_nav_menus ),
 
 	array(  "name" => "Rename Homepage",
-	"desc" => "You can change your homepage link text here " . help_icon("rename-homepage"),
+	"desc" => "You can change your homepage link text here " . ddm_help_icon("rename-homepage"),
 	"id" => "shailan_dm_home_tag",
 	"std" => __("Home"),
 	"type" => "text"),
 
 	array(  "name" => "Show parent indicators",
-	"desc" => "This option will enable arrows next to parent items.". help_icon("parent-indicators"),
+	"desc" => "This option will enable arrows next to parent items.". ddm_help_icon("parent-indicators"),
 	"id" => "shailan_dm_arrows",
 	"type" => "checkbox",
 	"std" => "on" ),
 
 	array(  "name" => "Indicator color",
-	"desc" => "Change indicator color (eg. #000000).". help_icon("indicator-color"),
+	"desc" => "Change indicator color (eg. #000000).". ddm_help_icon("indicator-color"),
 	"id" => "shailan_dm_arrow_color",
 	"std" => "rgba(0,0,0,0.5)",
 	"type" => "text"),
@@ -139,49 +139,49 @@ array(
 	),
 
 	array(
-		"desc" => "Settings here only effect menus inserted with <strong>template tag</strong> : <code>&lt;?php shailan_dropdown_menu(); ?&gt;</code>. Widget settings are NOT affected by these settings. ".help_icon("template-tag"),
+		"desc" => "Settings here only effect menus inserted with <strong>template tag</strong> : <code>&lt;?php shailan_dropdown_menu(); ?&gt;</code>. Widget settings are NOT affected by these settings. ".ddm_help_icon("template-tag"),
 		"type" => "paragraph"
 	),
 
 	array(  "name" => "Menu Type",
-	"desc" => "Dropdown Menu Type".help_icon("menu-type"),
+	"desc" => "Dropdown Menu Type".ddm_help_icon("menu-type"),
 	"id" => "shailan_dm_type",
 	"std" => "pages",
 	"options" => $types,
 	"type" => "select"),
 
 	array(  "name" => "Home link",
-	"desc" => "If checked dropdown menu displays home link".help_icon("home-link"),
+	"desc" => "If checked dropdown menu displays home link".ddm_help_icon("home-link"),
 	"id" => "shailan_dm_home",
 	"std" => 'on',
 	"type" => "checkbox"),
 
 	array(  "name" => "Login",
-	"desc" => "If checked dropdown menu displays login link".help_icon("login"),
+	"desc" => "If checked dropdown menu displays login link".ddm_help_icon("login"),
 	"id" => "shailan_dm_login",
 	"std" => 'on',
 	"type" => "checkbox"),
 
 	array(  "name" => "Register / Site Admin",
-	"desc" => "If checked dropdown menu displays register/site admin link.".help_icon("register-site-admin"),
+	"desc" => "If checked dropdown menu displays register/site admin link.".ddm_help_icon("register-site-admin"),
 	"id" => "shailan_dm_login",
 	"std" => 'on',
 	"type" => "checkbox"),
 
 	array(  "name" => "Vertical menu",
-	"desc" => "If checked dropdown menu is displayed vertical.".help_icon("vertical-menu"),
+	"desc" => "If checked dropdown menu is displayed vertical.".ddm_help_icon("vertical-menu"),
 	"id" => "shailan_dm_vertical",
 	"std" => 'off',
 	"type" => "checkbox"),
 
 	array(  "name" => "Exclude Pages",
-	"desc" => "Excluded page IDs.".help_icon("exclude-pages"),
+	"desc" => "Excluded page IDs.".ddm_help_icon("exclude-pages"),
 	"id" => "shailan_dm_exclude",
 	"std" => "",
 	"type" => "text"),
 
 	array(  "name" => "Alignment",
-	"desc" => "Menu alignment.".help_icon("alignment"),
+	"desc" => "Menu alignment.".ddm_help_icon("alignment"),
 	"id" => "shailan_dm_align",
 	"std" => "left",
 	"options" => $alignment,
@@ -196,26 +196,26 @@ array(
 ),
 
 	array(  "name" => "Enable dropdown effects",
-	"desc" => "If checked sub menus will use effects below". help_icon("enable-dropdown-effects"),
+	"desc" => "If checked sub menus will use effects below". ddm_help_icon("enable-dropdown-effects"),
 	"std" => "on",
 	"id" => "shailan_dm_effects",
 	"type" => "checkbox"),
 
 	array(  "name" => "Effect",
-	"desc" => "Select effect you want to use".help_icon("effect"),
+	"desc" => "Select effect you want to use".ddm_help_icon("effect"),
 	"id" => "shailan_dm_effect",
 	"type" => "select",
 	"options" => $effects ),
 
 	array(  "name" => "Effect Speed",
-	"desc" => "Select effect speed".help_icon("effect-speed"),
+	"desc" => "Select effect speed".ddm_help_icon("effect-speed"),
 	"id" => "shailan_dm_effect_speed",
 	"type" => "select",
 	"std" => "fast",
 	"options" => $speed ),
 
 	array(  "name" => "Effect delay",
-	"desc" => "Select effect delay (uses hoverIntent)".help_icon("effect-delay"),
+	"desc" => "Select effect delay (uses hoverIntent)".ddm_help_icon("effect-delay"),
 	"id" => "shailan_dm_effect_delay",
 	"type" => "select",
 	"options" => $delay ),
@@ -234,7 +234,7 @@ array(
 	),
 
 	array(  "name" => "Use custom colors",
-	"desc" => "If not checked custom colors won't work.".help_icon("use-custom-colors"),
+	"desc" => "If not checked custom colors won't work.".ddm_help_icon("use-custom-colors"),
 	"id" => "shailan_dm_custom_colors",
 	"std" => 'off',
 	"type" => "checkbox"),
@@ -242,31 +242,31 @@ array(
 	array("type"=>"picker"),
 
 	array(  "name" => "Menu Background Color",
-	"desc" => "Background color of the dropdown menu".help_icon("menu-background-color"),
+	"desc" => "Background color of the dropdown menu".ddm_help_icon("menu-background-color"),
 	"id" => "shailan_dm_color_menubg",
 	"std" => '#000000',
 	"type" => "text"),
 
 	array(  "name" => "Hover Background Color",
-	"desc" => "Background color of list item link.".help_icon("hover-background-color"),
+	"desc" => "Background color of list item link.".ddm_help_icon("hover-background-color"),
 	"id" => "shailan_dm_color_lihover",
 	"std" => '#333333',
 	"type" => "text"),
 
 	array(  "name" => "Link Text Color",
-	"desc" => "Default link color".help_icon("link-text-color"),
+	"desc" => "Default link color".ddm_help_icon("link-text-color"),
 	"id" => "shailan_dm_color_link",
 	"std" => '#FFFFFF',
 	"type" => "text"),
 
 	array(  "name" => "Link Text Color on mouse over",
-	"desc" => "Secondary link color".help_icon("link-text-color-on-mouse-over"),
+	"desc" => "Secondary link color".ddm_help_icon("link-text-color-on-mouse-over"),
 	"id" => "shailan_dm_color_hoverlink",
 	"std" => '#FFFFFF',
 	"type" => "text"),
 
 	array(  "name" => "Overlay",
-	"desc" => "Menu overlay (Works on browsers that support png transparency only.)".help_icon("overlay"),
+	"desc" => "Menu overlay (Works on browsers that support png transparency only.)".ddm_help_icon("overlay"),
 	"id" => "shailan_dm_overlay",
 	"std" => "glass",
 	"type" => "select",
@@ -281,34 +281,34 @@ array(
 	),
 
 	array(  "name" => "Dropdown Menu Font",
-	"desc" => "Font family for the menu<br />Please leave blank to use your wordpress theme font.".help_icon("dropdown-menu-font"),
+	"desc" => "Font family for the menu<br />Please leave blank to use your wordpress theme font.".ddm_help_icon("dropdown-menu-font"),
 	"id" => "shailan_dm_font",
 	"std" => '',
 	"type" => "text"),
 
 	array(  "name" => "Dropdown Menu Font Size",
-	"desc" => "Font size of the menu items (Eg: 12px OR 1em) <br />Please leave blank to use your wordpress theme font-size.".help_icon("dropdown-menu-font-size"),
+	"desc" => "Font size of the menu items (Eg: 12px OR 1em) <br />Please leave blank to use your wordpress theme font-size.".ddm_help_icon("dropdown-menu-font-size"),
 	"id" => "shailan_dm_fontsize",
 	"std" => '',
 	"type" => "text"),
 
 	array(
 		"name" => "Custom CSS",
-		"desc" => "You can paste your own customization file here.".help_icon("custom-css"),
+		"desc" => "You can paste your own customization file here.".ddm_help_icon("custom-css"),
 		"id" => "shailan_dm_custom_css",
 		"std" => '',
 		"type" => "textarea"
 	),
 
 	array(  "name" => "Show Empty Categories",
-	"desc" => "If checked categories with no posts will be shown.".help_icon("show-empty-categories"),
+	"desc" => "If checked categories with no posts will be shown.".ddm_help_icon("show-empty-categories"),
 	"id" => "shailan_dm_show_empty",
 	"std" => 'on',
 	"type" => "checkbox"),
 
 		array(
 		"name" => "Wrap long menu items",
-		"desc" => "If checked long menu items will wrap". help_icon("wrap-long-menu-items"),
+		"desc" => "If checked long menu items will wrap". ddm_help_icon("wrap-long-menu-items"),
 		"id" => "shailan_dm_allowmultiline",
 		"type" => "checkbox",
 		"std" => "off"
@@ -316,7 +316,7 @@ array(
 
 	array(
 		"name" => "Remove title attributes",
-		"desc" => "This will remove 'View all posts under..' title attributes from menu links". help_icon("remove-title-attributes"),
+		"desc" => "This will remove 'View all posts under..' title attributes from menu links". ddm_help_icon("remove-title-attributes"),
 		"id" => "shailan_dm_remove_title_attributes",
 		"type" => "checkbox",
 		"std" => "off"
@@ -324,7 +324,7 @@ array(
 
 	array(
 		"name" => "Remove links from top levels",
-		"desc" => "This will remove links from top level pages/categories. So user can only click to sub-level menu.". help_icon("remove-links-from-top-levels"),
+		"desc" => "This will remove links from top level pages/categories. So user can only click to sub-level menu.". ddm_help_icon("remove-links-from-top-levels"),
 		"id" => "shailan_dm_remove_top_level_links",
 		"type" => "checkbox",
 		"std" => "off"
