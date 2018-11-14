@@ -3,7 +3,7 @@ Contributors: mattsay
 Donate link: https://metinsaylan.com/donate/
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8
-Tested up to: 4.7
+Tested up to: 4.9.8
 Stable tag: 1.9.7
 
 A Dropdown Menu Plugin to create automatic navigation using Pages, Categories or Custom Menu Items. Comes with customizable themes and jquery effects.
@@ -83,5 +83,8 @@ Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://
 * Updated readme links
 * Removed plugin activation redirect
 * Fix capability for options page
+* Remove deprecated screen_icon 
+* Fix options page help links
+* Fix options std value missing error
 
 A list of all changes can be found on [Changelog page on Github](https://github.com/shailancom/dropdown-menu-widget/blob/master/CHANGELOG.md)

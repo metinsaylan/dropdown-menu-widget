@@ -189,7 +189,7 @@ function update_plugin_settings( $current_settings ){
 				$current_settings[ $option['id'] ] = $option['std'];
 			}
 		}
-		
+
 	}
 
 	update_option( $this->settings_key, $current_settings );
