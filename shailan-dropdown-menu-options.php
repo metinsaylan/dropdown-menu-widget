@@ -42,8 +42,7 @@ $available_themes = array_merge( $available_themes, $default_themes );
 
 // Swap array for options page
 $themes = array();
-while(list($Key,$Val) = each($available_themes))
-	$themes[$Val] = $Key;
+$themes = array_flip( $available_themes );
 
 $overlays = array(
 	'none'=>'none',
