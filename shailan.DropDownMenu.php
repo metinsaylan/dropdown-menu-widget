@@ -1,16 +1,16 @@
 <?php
 /*
 Plugin Name: Dropdown Menu Widget
-Plugin URI: http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/
+Plugin URI: https://metinsaylan.com/wordpress/plugins/dropdown-menu/
 Description: Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects.
 Tags: dropdown, menu, css, css-dropdown, navigation, widget, dropdown-menu, customization, theme, jquery, template, multi-color, theme
-Version: 1.9.6
+Version: 1.9.7
 Author: Metin Saylan
-Author URI: http://metinsaylan.com/
+Author URI: https://metinsaylan.com/
 Text Domain: shailan-dropdown-menu
 */
 
-define('VERSION', '1.9.6');
+define('VERSION', '1.9.7');
 
 class shailan_DropdownWidget extends WP_Widget {
 
@@ -31,7 +31,7 @@ class shailan_DropdownWidget extends WP_Widget {
 		$this->pluginname = "Dropdown Menu";
 		$this->shortname = "shailan_dm";
 
-		$this->help_url = "http://metinsaylan.com/docs/dropdown-menu-widget-help/";
+		$this->help_url = "https://metinsaylan.com/wordpress/plugins/dropdown-menu/help/";
 
 		$this->version = VERSION;
 		$this->settings_key = "shailan_dropdown_menu";
@@ -41,9 +41,9 @@ class shailan_DropdownWidget extends WP_Widget {
 		add_action( 'wp_head', array(&$this, 'header') );
 
 		// Hook up scripts
-			wp_enqueue_script( 'jquery' );
-			wp_enqueue_script( 'hoverIntent', plugins_url( '/scripts/hoverIntent.js' , __FILE__ ) , array('jquery') );
-			wp_enqueue_script( 'dropdown-ie-support', plugins_url( '/scripts/include.js' , __FILE__ ) , array('jquery') );
+		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'hoverIntent', plugins_url( '/scripts/hoverIntent.js' , __FILE__ ) , array('jquery') );
+		wp_enqueue_script( 'dropdown-ie-support', plugins_url( '/scripts/include.js' , __FILE__ ) , array('jquery') );
 
 		// Include options array
 		require_once("shailan-dropdown-menu-options.php");
@@ -203,7 +203,7 @@ function options_page(){
 		"2" => __("Dropdown Menu Widget settings are reset.", "shailan-dropdown-menu")
 	);
 
-	$navigation = '<div id="stf_nav"><a href="http://metinsaylan.com/projects/wordpress/dropdown-menu-widget/" target="_blank">Plugin page</a> | <a href="http://metinsaylan.com/docs/dropdown-menu-widget-help/" target="_blank">Usage</a> | <a href="http://metinsaylan.com/donate/" target="_blank">Donate</a> | <a href="http://metinsaylan.com/projects/" target="_blank">Get more plugins..</a></div>';
+	$navigation = '<div id="stf_nav"><a href="https://metinsaylan.com/wordpress/plugins/dropdown-menu/" target="_blank">Plugin page</a> | <a href="https://metinsaylan.com/wordpress/plugins/dropdown-menu/help/" target="_blank">Usage</a> | <a href="https://metinsaylan.com/donate/" target="_blank">Donate</a> | <a href="https://metinsaylan.com/wordpress/plugins/" target="_blank">Get more plugins..</a></div>';
 
 	$footer_text = '';
 
@@ -502,7 +502,7 @@ function options_page(){
 			$shailan_dm_color_hoverlink = $this->get_plugin_setting('shailan_dm_color_hoverlink');
 			$is_fx_active = (bool) ( 'on' == $this->get_plugin_setting('shailan_dm_effects') );
 
-			echo "\n\n<!-- Dropdown Menu Widget Styles by shailan (http://metinsaylan.com) v" . VERSION . " on wp" . get_bloginfo( 'version' ) . " -->"; // For debug
+			echo "\n\n<!-- Dropdown Menu Widget Styles by shailan (https://metinsaylan.com) v" . VERSION . " on wp" . get_bloginfo( 'version' ) . " -->"; // For debug
 			echo "\n<link rel=\"stylesheet\" href=\"". plugins_url( '/css/shailan-dropdown.min.css' , __FILE__ ) . "\" type=\"text/css\" />";
 
 			if( $theme!='*none*' && $theme != '*custom*' ){
@@ -652,7 +652,7 @@ ul.dropdown li li.parent:hover>a:after{
 
 		if( $is_fx_active || $remove_title_attributes || $remove_top_level_links ){
 
-		echo "\n\n<!-- Dropdown Menu Widget Effects by shailan (http://metinsaylan.com) v". VERSION ." on wp".get_bloginfo( 'version' )." -->"; // For debug
+		echo "\n\n<!-- Dropdown Menu Widget Effects by shailan (https://metinsaylan.com) v". VERSION ." on wp".get_bloginfo( 'version' )." -->"; // For debug
 		echo "\n<script type=\"text/javascript\">/* <![CDATA[ */";
 		echo "\njQuery(document).ready(function($) { \n";
 

@@ -1,10 +1,10 @@
 === Dropdown Menu Widget ===
 Contributors: mattsay
-Donate link: http://metinsaylan.com/donate/
+Donate link: https://metinsaylan.com/donate/
 Tags: css, dropdown, menu, widget, pages, categories, multi, jquery, navigation, category list, themes, custom-styles, options-page, animations, effects
 Requires at least: 2.8
 Tested up to: 4.7
-Stable tag: 1.9.6
+Stable tag: 1.9.7
 
 Highly customizable automatic pages, categories or custom dropdown navigation menu widget with nice jQuery effects. 
 
@@ -20,18 +20,18 @@ Features:
 * Customizable color scheme (select Custom Theme from options to activate)
 * Vertical or Horizontal Menus
 * Supports Multiple Instances
-* Can be embedded into theme using [PHP Template Tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
+* Can be embedded into theme using [PHP Template Tag](https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/)
 
 *Documentation & Simple Tutorials to Get You Started:*
 
-* [Dropdown Menu Widget Help](http://metinsaylan.com/docs/dropdown-menu-widget-help/)
-* [Dropdown Menu PHP Template Tag Usage](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/)
-* [Using Custom Menus In Dropdown Menu Widget](http://metinsaylan.com/wordpress/2010/07/26/custom-dropdown-menu-using-wordpress-3-nav-menus/)
-* [Tutorial: Create your very own dropdown menu stylesheet](http://metinsaylan.com/wordpress/2010/04/04/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
-* [Hook: Append Categories Menu To Pages Menu](http://metinsaylan.com/wordpress/2011/02/10/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
-* [View all posts tagged `Dropdown Menu Widget`](http://metinsaylan.com/tag/dropdown-menu-widget/)
+* [Dropdown Menu Widget Help](https://metinsaylan.com/wordpress/plugins/dropdown-menu/help/)
+* [Dropdown Menu PHP Template Tag Usage](https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/)
+* [Using Custom Menus In Dropdown Menu Widget](https://metinsaylan.com/1025/custom-dropdown-menu-using-wordpress-3-nav-menus/)
+* [Tutorial: Create your very own dropdown menu stylesheet](https://metinsaylan.com/600/tutorial-create-your-very-own-dropdown-menu-stylesheet/)
+* [Hook: Append Categories Menu To Pages Menu](https://metinsaylan.com/4570/how-to-add-categories-dropdown-to-the-end-of-dropdown-menu-widget/)
+* [View all posts tagged `Dropdown Menu Widget`](https://metinsaylan.com/tag/dropdown-menu-widget/)
 
-If you like this plugin, please [donate](http://metinsaylan.com/donate/).
+If you like this plugin, please [donate](https://metinsaylan.com/donate/).
 
 Please report issues on [Github Issues Page](https://github.com/shailancom/dropdown-menu-widget/issues).
 Visit source on [github](https://github.com/shailancom/dropdown-menu-widget)
@@ -56,7 +56,7 @@ Adding a sidebar in WordPress is a quite easy task. You can [read instructions h
 
 = I added this widget to my sidebar but it looks all weird! =
 
-This widget is intended for *wide header widget areas*, not regular sidebars. You can [add a sidebar](http://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/) to your theme or you can [get a theme](http://metinsaylan.com/lists/themes-support-dropdown/) that supports dropdown menu widget. If you don't want to add a sidebar, you can use [PHP template tag](http://metinsaylan.com/wordpress/2011/07/31/dropdown-menu-widget-template-tag-usage-explained/) instead.
+This widget is intended for *wide header widget areas*, not regular sidebars. You can [add a sidebar](https://metinsaylan.com/727/how-to-widgetize-your-theme-in-3-simple-steps/) to your theme or you can [get a theme](http://metinsaylan.com/lists/themes-support-dropdown/) that supports dropdown menu widget. If you don't want to add a sidebar, you can use [PHP template tag](https://metinsaylan.com/4598/dropdown-menu-widget-template-tag-usage-explained/) instead.
 
 = Can I create my own theme? =
 
@@ -78,6 +78,8 @@ Please submit errors, bugs or requests on [Dropdown Menu Widget Github](https://
 
 == Changelog ==
 
-= 1.9.6 =
+= 1.9.7 =
+* Fixed deprecated function errors
+* Updated readme links
 
 A list of all changes can be found on [Changelog page on Github](https://github.com/shailancom/dropdown-menu-widget/blob/master/CHANGELOG.md)
